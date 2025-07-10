@@ -110,7 +110,7 @@ const DataTable: React.FC<DataTableProps> = ({
                 key={rowIndex}
                 className={`${
                   row.isBold 
-                    ? 'bg-gradient-to-r from-blue-50 to-indigo-50 font-bold' 
+                    ? 'bg-gradient-to-r from-red-50 to-red-100 font-bold' 
                     : 'hover:bg-gray-50'
                 } transition-all duration-300 relative overflow-hidden`}
                 style={{
@@ -122,7 +122,7 @@ const DataTable: React.FC<DataTableProps> = ({
                 {/* Row highlight animation */}
                 {row.isBold && (
                   <div 
-                    className="absolute inset-0 bg-blue-200 opacity-0"
+                    className="absolute inset-0 bg-red-200 opacity-0"
                     style={{
                       opacity: animationProgress > 0.9 ? 0.2 : 0,
                       transform: animationProgress > 0.9 ? 'scaleX(1)' : 'scaleX(0)',
@@ -136,7 +136,7 @@ const DataTable: React.FC<DataTableProps> = ({
                   <td
                     key={cellIndex}
                     className={`border border-gray-300 px-4 py-3 relative ${
-                      cell.isBold ? 'font-bold text-gray-900' : 'text-gray-700'
+                      cell.isBold ? 'font-bold text-red-900' : 'text-gray-700'
                     } ${cell.isHeader ? 'bg-gray-100 font-semibold' : ''}`}
                     style={{
                       opacity: animationProgress,

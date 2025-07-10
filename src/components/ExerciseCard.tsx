@@ -53,7 +53,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
   const hasAllAnswers = userAnswers.every(ans => ans.trim() !== '');
 
   const renderInputs = () => {
-    if (multipleInputs && Array.isArray(answer)) {
+    if (multipleInputs && Array.isArray(answer) && !isChoice) {
       return (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {answer.map((_, index) => (
@@ -75,6 +75,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
       );
     }
 
+  if(!isChoice){
     return (
       <input
         type="text"
@@ -85,6 +86,8 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
         disabled={isSubmitted}
       />
     );
+  }
+  
   };
 
   return (
@@ -104,10 +107,11 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
               <div key={index} className="flex items-center">
                 <input
                   type="radio"
-                  id={`choice-${index}`}
-                  name="exercise-choice"
+                  id={`choice-${index}-${choice}`}
+                  name={`exercise-choice-${index}`}
                   value={choice}
                   className="mr-2"
+                  onChange={(e) => handleInputChange(0, e.target.value)}
                   disabled={isSubmitted}
                 />
                 <label htmlFor={`choice-${index}`} className="text-gray-700">

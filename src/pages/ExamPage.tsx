@@ -140,6 +140,7 @@ const ExamPage: React.FC = () => {
               <ExplanationCard
                 key={index}
                 title={exercise.explanationTitle || 'Information'}
+                audio={exercise.audio}
                 content={exercise.explanationContent || ''}
                 image={exercise.image}
               >

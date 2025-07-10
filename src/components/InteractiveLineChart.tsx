@@ -283,8 +283,7 @@ const InteractiveLineChart: React.FC<InteractiveLineChartProps> = ({
         <p className="text-blue-800 font-medium mb-2">Instructions:</p>
         <p className="text-blue-700 text-sm leading-relaxed">{description}</p>
         <p className="text-blue-600 text-xs mt-2 italic">
-          Click and drag to draw your line. Try to match the pattern described in the text above.
-        </p>
+          Click and drag to draw your line. Try to match the pattern described        </p>
       </div>
 
       <div className="relative flex justify-center mb-6">

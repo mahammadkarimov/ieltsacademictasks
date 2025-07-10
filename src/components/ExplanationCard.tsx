@@ -1,18 +1,21 @@
 import React from 'react';
 import { BookOpen } from 'lucide-react';
+import AudioTask from './AudioTask';
 
 interface ExplanationCardProps {
   title: string;
   content: string;
   children?: React.ReactNode;
   image?: string; // Optional image prop
+  audio?: string; // Optional audio prop
 }
 
 const ExplanationCard: React.FC<ExplanationCardProps> = ({ 
   title, 
   content, 
   children,
-  image
+  image,
+  audio
 }) => {
   return (
     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg shadow-md p-6 mb-6 border border-blue-200">
@@ -33,6 +36,10 @@ const ExplanationCard: React.FC<ExplanationCardProps> = ({
             className="rounded-lg shadow-sm mb-2"
           />
         )}
+      
+      {audio && (
+        <AudioTask audioSrc={audio} />
+      )}
       
       {children && (
         <div className="mt-4">

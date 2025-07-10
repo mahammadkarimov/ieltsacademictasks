@@ -21,6 +21,7 @@ interface Exercise {
   chart?: ChartData;
   image?: string;
   isExplanation?: boolean;
+  audio?: string; // Optional prop for audio explanation
   explanationTitle?: string;
   isChoice?: boolean;
   isChoiceImages?: boolean; // Optional prop for choice images
@@ -427,6 +428,7 @@ const examDataMap: Record<string, ExamData> = {
           ]
         }
       },
+     
       {
         "chart": {
           "type": "draggableTable",
@@ -442,43 +444,58 @@ const examDataMap: Record<string, ExamData> = {
             },
             {
               "cells": [
-                { "value": "", "isDropZone": false },
+                { "value": "images/48.png", "isDropZone": false,isImage: true },
                 { "value": "", "isDropZone": true, "correctAnswer": "surge", "id": "cell-1" }
               ]
             },
             {
               "cells": [
-                { "value": "Data remains unchanged over time", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "plateau", "id": "cell-2" }
+                { "value": "images/49.png", "isDropZone": false,isImage: true },
+                { "value": "", "isDropZone": true, "correctAnswer": "plateau", "id": "cell-2" },
               ]
             },
             {
               "cells": [
-                { "value": "A sharp downward movement", "isDropZone": false },
+                { "value": "images/50.png", "isDropZone": false, isImage: true },
                 { "value": "", "isDropZone": true, "correctAnswer": "plummet", "id": "cell-3" }
               ]
             },
             {
               "cells": [
-                { "value": "Recovery after a decline", "isDropZone": false },
+                { "value": "images/51.png", "isDropZone": false , isImage: true},
                 { "value": "", "isDropZone": true, "correctAnswer": "rebound", "id": "cell-4" }
               ]
             },
             {
               "cells": [
-                { "value": "Irregular up and down movement", "isDropZone": false },
+                { "value": "images/52.png", "isDropZone": false, isImage: true },
                 { "value": "", "isDropZone": true, "correctAnswer": "fluctuate", "id": "cell-5" }
               ]
             }
           ],
           "draggableItems": [
-            { "id": "item-1", "value": "surge" },
-            { "id": "item-2", "value": "plateau" },
-            { "id": "item-3", "value": "plummet" },
-            { "id": "item-4", "value": "rebound" },
-            { "id": "item-5", "value": "fluctuate" },
-            { "id": "item-6", "value": "stabilize" },
-            { "id": "item-7", "value": "decline" }
+            
+              { "id": "item-1", "value": "a slight drop" },
+              { "id": "item-2", "value": "a significant increase" },
+              { "id": "item-3", "value": "to plunge" },
+              { "id": "item-4", "value": "a leap" },
+              { "id": "item-5", "value": "erratic" },
+              { "id": "item-6", "value": "a remarkable growth" },
+              { "id": "item-7", "value": "to hit a low" },
+              { "id": "item-8", "value": "static" },
+              { "id": "item-9", "value": "to jump" },
+              { "id": "item-10", "value": "fluctuation" },
+              { "id": "item-11", "value": "to decrease marginally" },
+              { "id": "item-12", "value": "to reach a trough" },
+              { "id": "item-13", "value": "a peak point" },
+              { "id": "item-14", "value": "to decrease drastically" },
+              { "id": "item-15", "value": "to dip" },
+              { "id": "item-16", "value": "to increase gradually" },
+              { "id": "item-17", "value": "to reach a high" },
+              { "id": "item-18", "value": "plateau" },
+              { "id": "item-19", "value": "to rise steadily" }
+
+          
           ]
         }
       },
@@ -497,55 +514,68 @@ const examDataMap: Record<string, ExamData> = {
             },
             {
               "cells": [
-                { "value": "", "isDropZone": false },
+                { "value": "images/48.png", "isDropZone": false,isImage: true },
                 { "value": "", "isDropZone": true, "correctAnswer": "surge", "id": "cell-1" }
               ]
             },
             {
               "cells": [
-                { "value": "Data remains unchanged over time", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "plateau", "id": "cell-2" }
+                { "value": "images/49.png", "isDropZone": false,isImage: true },
+                { "value": "", "isDropZone": true, "correctAnswer": "plateau", "id": "cell-2" },
               ]
             },
             {
               "cells": [
-                { "value": "A sharp downward movement", "isDropZone": false },
+                { "value": "images/50.png", "isDropZone": false, isImage: true },
                 { "value": "", "isDropZone": true, "correctAnswer": "plummet", "id": "cell-3" }
               ]
             },
             {
               "cells": [
-                { "value": "Recovery after a decline", "isDropZone": false },
+                { "value": "images/51.png", "isDropZone": false , isImage: true},
                 { "value": "", "isDropZone": true, "correctAnswer": "rebound", "id": "cell-4" }
               ]
             },
             {
               "cells": [
-                { "value": "Irregular up and down movement", "isDropZone": false },
+                { "value": "images/52.png", "isDropZone": false, isImage: true },
                 { "value": "", "isDropZone": true, "correctAnswer": "fluctuate", "id": "cell-5" }
               ]
             }
           ],
           "draggableItems": [
-            { "id": "item-1", "value": "surge" },
-            { "id": "item-2", "value": "plateau" },
-            { "id": "item-3", "value": "plummet" },
-            { "id": "item-4", "value": "rebound" },
-            { "id": "item-5", "value": "fluctuate" },
-            { "id": "item-6", "value": "stabilize" },
-            { "id": "item-7", "value": "decline" }
+          
+              { "id": "item-1", "value": "slightly" },
+              { "id": "item-2", "value": "gradually" },
+              { "id": "item-3", "value": "drastically" },
+              { "id": "item-4", "value": "considerably" },
+              { "id": "item-5", "value": "dramatically" },
+              { "id": "item-6", "value": "negligibly" },
+              { "id": "item-7", "value": "sharply" },
+              { "id": "item-8", "value": "steadily" },
+              { "id": "item-9", "value": "noticeably" },
+              { "id": "item-10", "value": "steeply" }
+          
+          
           ]
         }
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Listening Exercise",
+        audio: "audios/audio1.mp4",
       },
       {
         "question": "While listening to the audio, use your mouse to draw a graph that shows the increase and decrease of house sales. After completing your drawing, click the 'Submit' button to verify its accuracy.",
+       
         "answer": "drawing",
         "chart": {
           "type": "interactive",
           "title": "Monthly Sales Pattern - Draw Your Line",
+          "description":"While listening to the audio, use your mouse to draw a graph that shows the increase and decrease of house sales. After completing your drawing, click the 'Submit' button to verify its accuracy.",
           "xAxisLabel": "Months",
           "yAxisLabel": "House sales",
-          "description": "",
+      
           "maxValue": 250,
           "data": [
             { "label": "Jan", "value": 50, "isBold": false },
@@ -578,18 +608,69 @@ const examDataMap: Record<string, ExamData> = {
         multipleInputs: true,
       },
       {
-        "question": "Look at the following line graph and fill in the gaps with the correct vocabulary. You should use no more than two words for each gap. Alternative answers that are equivalent in meaning may also be accepted upon submission. At the beginning of the period, the majority of book sales were of detectives, at 25 % of all sales. Conversely, sci-fi was not popular as this genre of books had the lowest percentage at only 5%.Despite the fact that children’s books were also sold widely, they made up 15% of sales. As the sales of detective books began ….. , the percentage of sci-fi books started ….. in the first two years of the period, overtaking the sales of detective books. At the same time, the figure for children’s books ….. to 30% till the end of the period. The year of 2013 saw a ….. in the proportion of sci-fi books.",
+        isExplanation: true,
+        explanationTitle: "Instructions",
+        explanationContent: "Look at the following line graph and fill in the gaps with the correct vocabulary. You should use no more than two words for each gap. Alternative answers that are equivalent in meaning may also be accepted upon submission."
+      },
+      {
+        "question": "At the beginning of the period, the majority of book sales were of detectives, at 25 % of all sales. Conversely, sci-fi was not popular as this genre of books had the lowest percentage at only 5%.Despite the fact that children’s books were also sold widely, they made up 15% of sales. As the sales of detective books began ….. , the percentage of sci-fi books started ….. in the first two years of the period, overtaking the sales of detective books. At the same time, the figure for children’s books ….. to 30% till the end of the period. The year of 2013 saw a ….. in the proportion of sci-fi books.",
         "image": "images/3.png",
         "answer": ["stood at", "a peak", "decreasing dramatically","fluctuated slightly","hit a trough"],
         "placeholder": "Enter the verb...",
         multipleInputs: true,
       },
       {
-        "question": "Look at the following line graph and then spot the mistakes, i.e. grammar, lexical,  and data , in the part of the following sample. Then see the answer after submitting your version: \n There were always lower percentages of female members of parliament in Germany and Italy than those in the other countries. Germany and Italy experienced a different trend although Italy took the lead, making up nearly 40% at the end of the period. With regard  France, there was a stability to finish approximately 32% in 2012 after a slightly drop in 2004.In 2000, the lowest point was seen in the UK with roughly 3%.However, this figure fell substantial to 10% in 2004, followed by a continuous decline to hit its low 26% in 2013.",
+        isExplanation: true,
+        explanationTitle: "Instructions",
+        explanationContent: "Look at the following line graph and then spot the mistakes, i.e. grammar, lexical,  and data , in the part of the following sample. Then see the answer after submitting your version."
+      },
+      {
+        "question": " There were always lower percentages of female members of parliament in Germany and Italy than those in the other countries. Germany and Italy experienced a different trend although Italy took the lead, making up nearly 40% at the end of the period. With regard  France, there was a stability to finish approximately 32% in 2012 after a slightly drop in 2004.In 2000, the lowest point was seen in the UK with roughly 3%.However, this figure fell substantial to 10% in 2004, followed by a continuous decline to hit its low 26% in 2013.",
         "image": "images/4.png",
         "answer": ["stood at", "a peak", "decreasing dramatically","fluctuated slightly","hit a trough"],
         "placeholder": "Enter the verb...",
         multipleInputs: true,
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Look at the highlighted words and rewrite the sentences based on the following sample. Type your version in the box and then see the answer. If necessary, two sentences can be merged into one sentence. Alternative answers that are equivalent in meaning may also be accepted upon submission.",
+        explanationContent:"Sample:The number of listeners to pop rock music increased steadily in 1990 in Italy. ( verb +adverb ) - The period of 1990 saw a steady increase in the number of listeners to rock music in Italy.           ( subject+ verb a + adjective +noun) There was a noticeable rise in the oil consumption from 1989 to 1995 in Sweden. ( there was a + adjective + noun) - Oil consumption in Sweden rose noticeably from 1989 to 1995. ( verb + noun)"
+      },
+      {
+        question:"1.	The figure for margarine peaked at 120 grams in 1986.",
+        answer: "",
+        placeholder: "Enter your answer here...",
+        multipleInputs: false,
+      },
+      {
+        question:"2.	The proportion of household gradually decreased and reached a low of 75 in 1975.",
+        answer: "",
+        placeholder: "Enter your answer here...",
+        multipleInputs: false,
+      },
+      {
+        question:"3.	The number of complaints caused by traffic noise doubled in four years until it fluctuated mildly till 1998.",
+        answer: "",
+        placeholder: "Enter your answer here...",
+        multipleInputs: false,
+      },
+      {
+        question:"4.	A fluctuation was observed in the clothing export income after a 4-year period.",
+        answer: "",
+        placeholder: "Enter your answer here...",
+        multipleInputs: false,
+      },
+      {
+        question:"5.	The Dutch saw a plateau in book sales throughout 5 years.",
+        answer: "",
+        placeholder: "Enter your answer here...",
+        multipleInputs: false,
+      },
+      {
+        question:"6.  The number of tablets sold in Prague declined to 500000 remarkably in 2015.Then it remained unchanged till 2018.",
+        answer: "",
+        placeholder: "Enter your answer here...",
+        multipleInputs: false,
       },
     {
       isExplanation: true,
@@ -599,31 +680,31 @@ const examDataMap: Record<string, ExamData> = {
       {
         "question": "The line graph below describes monthly expenditures on household appliances in Norway between 1994 and 2004.",
         "answer": "The line graph provides information on the amount of money that Norwegians expended on domestic gadgets per month over the course of ten years from 1994 to 2004",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
         "question": "The line graph below shows yearly carbon dioxide emissions in Vietnam.",
         "answer": "The line graph delineates the annual output of carbon dioxide in an Asian country, Vietnam",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
         "question": "The line graph below shows daily temperature in Spain in June,1975.",
         "answer": "The line graph gives data on daily temperature variations in Spain throughout the month of June, 1975.",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
         "question": "The chart below shows the average number of people in the UK who travelled each day by car, bus or train between 1970 and 2030.",
         "answer": "The line graph compares the average number of commuters traveling on a daily basis by three different modes of transport, namely car, bus and train within a 60-year time span , from 1970 to 2030.",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
         "question": "The graph below shows the amount of waste which was produced by three companies from 1990 to 2005.",
         "answer": "The line graph illustrates three companies with regard to their waste output over a span of 15 years, from 1990 to 2005.",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
 
@@ -631,7 +712,7 @@ const examDataMap: Record<string, ExamData> = {
 {
         "question": "The line graph below shows the consumption of different kinds of meat in France between 1978 and 1998.",
         "answer": "The line graph provides information regarding the amount of various types of meat consumed in France over the span of two decades, from 1978 to 1998.",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
 
@@ -639,19 +720,19 @@ const examDataMap: Record<string, ExamData> = {
 {
         "question": "The line graph below describes expenditures on fast food in Denmark and France from 1980 to 1990.",
         "answer": "The line graph provides information on the amount of money that the Dutch and French expended on fast food over a span of one decade, from 1980 to 1990.",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
 {
         "question": "The line graph below shows yearly carbon dioxide emissions in Vietnam and Thailand.",
         "answer": "The line graph delineates the annual output of carbon dioxide in an Asian countries, Vietnam and Thailand.",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
 {
         "question": "The line graph below shows how old people in Italy spent their free time between 1990 and 2015.",
         "answer": ": The line graph gives data on the kind of activities being engaged by aged population of Italy in their spare time, covering a period from 1990 to 2015",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
 {
@@ -662,7 +743,7 @@ const examDataMap: Record<string, ExamData> = {
           "b)	The line graph shows the number of detective readers over the course of eight years, from 1990 to 1998."
         ],
         "answer": "a",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
@@ -673,7 +754,7 @@ const examDataMap: Record<string, ExamData> = {
           "b)	The line graph shows the amount of people who had solar panels between 1995 and 2005."
         ],
         "answer": "a",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
@@ -684,7 +765,7 @@ const examDataMap: Record<string, ExamData> = {
           "b)	The line graph describes average rainfall per month in particular cities of Europe over the whole year."
         ],
         "answer": "a",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
@@ -695,7 +776,7 @@ const examDataMap: Record<string, ExamData> = {
           "b)	The line graph delineates monthly output of cars in three countries from January to December in 1990."
         ],
         "answer": "a",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },
       {
@@ -706,7 +787,7 @@ const examDataMap: Record<string, ExamData> = {
           "b)	The line graph illustrates the proportion of young people participating in various outdoor games in the UK within 8 years from 1990 to 1998."
         ],
         "answer": "a",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },{
         "question": "The line graph shows the amount of money people in Paris spent on two different entertainment activities between 1975 and 1990.",
@@ -716,7 +797,7 @@ const examDataMap: Record<string, ExamData> = {
           "b)	The graph gives data on how much money people in Paris spent on two different entertainment activities from 1975 to 1990."
         ],
         "answer": "a",
-        "placeholder": "Enter the verb...",
+        "placeholder": "",
         multipleInputs: false,
       },{
         "question": "The line graph shows the amount of three kinds of cheese which were eaten in Denmark last year.",
@@ -930,40 +1011,65 @@ const examDataMap: Record<string, ExamData> = {
             },
             {
               cells: [
-                { value: 'Social Networking', isDropZone: false },
+                { value: 'images/item-1.png', isDropZone: false, isImage:true },
                 { value: '', isDropZone: true, correctAnswer: '1/3', id: 'cell-1' }
               ]
             },
             {
               cells: [
-                { value: 'Video', isDropZone: false },
+                { value: 'images/item-2.png', isDropZone: false,isImage:true },
                 { value: '', isDropZone: true, correctAnswer: '1/4', id: 'cell-2' }
               ]
             },
             {
               cells: [
-                { value: 'Audio', isDropZone: false },
+                { value: 'images/item-3.png', isDropZone: false,isImage:true },
                 { value: '', isDropZone: true, correctAnswer: '1/6', id: 'cell-3' }
               ]
             },
             {
               cells: [
-                { value: 'Reading', isDropZone: false },
+                { value: 'images/item-4.png', isImage:true, isDropZone: false },
                 { value: '', isDropZone: true, correctAnswer: '1/6', id: 'cell-4' }
               ]
             },
             {
               cells: [
-                { value: 'News', isDropZone: false },
+                { value: 'images/item-5.png' , isImage:true, isDropZone: false },
                 { value: '', isDropZone: true, correctAnswer: '1/12', id: 'cell-5' }
               ]
             },
             {
               cells: [
-                { value:'Game', isDropZone:false},
-                {value:'1/12',isDropZone:true,correctAnswer:'1/12',id:'cell-6'}
+                { value: 'images/item-6.png' , isImage:true, isDropZone: false },
+                { value: '', isDropZone: true, correctAnswer: '1/12', id: 'cell-5' }
               ]
-            }
+            },
+            {
+              cells: [
+                { value: 'images/item-7.png' , isImage:true, isDropZone: false },
+                { value: '', isDropZone: true, correctAnswer: '1/12', id: 'cell-5' }
+              ]
+            },
+            {
+              cells: [
+                { value: 'images/item-8.png' , isImage:true, isDropZone: false },
+                { value: '', isDropZone: true, correctAnswer: '1/12', id: 'cell-5' }
+              ]
+            },
+            {
+              cells: [
+                { value: 'images/item-9.png' , isImage:true, isDropZone: false },
+                { value: '', isDropZone: true, correctAnswer: '1/12', id: 'cell-5' }
+              ]
+            },
+            {
+              cells: [
+                { value: 'images/item-10.png' , isImage:true, isDropZone: false },
+                { value: '', isDropZone: true, correctAnswer: '1/12', id: 'cell-5' }
+              ]
+            },
+          
           ],
           draggableItems:[
             {id:'item-1',value:'Three-quarters'},
@@ -990,7 +1096,7 @@ const examDataMap: Record<string, ExamData> = {
         explanationContent: "Decrease slightly, however, in contrast, the smallest, likewise, a half, slipped to, the most popular type, the second most popular, compared to, the second most common, most significant change, while, by comparison"
       },
       {
-        "question": "Of the six movie genres, thriller was ….. (the most popular type) in both years, accounting for 28% in 1973, although its proportion ….. (decreased slightly) five years later. The ….. (most significant change) occurred in 1978, when action films surged to 24%, becoming ….. (the second most popular) genre. Another genre, adventure, stood at 18%, ….. (compared to) 20% five years earlier.….. (In contrast,) the other genres decreased in popularity. At the start of the period, western films were ….. (the second most common) type, attracting 22% of viewers; ….. (however), this figure slipped to 8% five years later, representing ….. (the smallest) share of the chart. ….. (Likewise), crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— ….. (slightly lower) than that of animation (12%), which emerged as a new genre in 1978.",
+        "question": "Of the six movie genres, thriller was ..... in both years, accounting for 28% in 1973, although its proportion ….. five years later. The …..  occurred in 1978, when action films surged to 24%, becoming ….. genre. Another genre, adventure, stood at 18%, …..  20% five years earlier.…..  the other genres decreased in popularity. At the start of the period, western films were …..  type, attracting 22% of viewers; ….. , this figure slipped to 8% five years later, representing …..  share of the chart. ….. , crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— …..  than that of animation (12%), which emerged as a new genre in 1978.",
         "answer": ["the most popular type", "decreased slightly", "most significant change", "the second most popular", "compared to", "In contrast", "the second most common", "however", "the smallest", "Likewise", "slightly lower"],
         "placeholder": "Enter the word...",
         multipleInputs: true,
@@ -1237,7 +1343,7 @@ const examDataMap: Record<string, ExamData> = {
     ]
   },
   'activity-5': {
-    title: 'Map activities',
+    title: 'Bar chart activities',
     timeLimit: '40 minutes',
     exercises: [
      

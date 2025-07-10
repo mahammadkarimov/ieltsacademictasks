@@ -233,7 +233,7 @@ const LineChart: React.FC<LineChartProps> = ({
                   y1={segment.y1}
                   x2={segment.x2}
                   y2={segment.y2}
-                  stroke="#3b82f6"
+                  stroke="#ff0000"
                   strokeWidth="12"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -251,11 +251,12 @@ const LineChart: React.FC<LineChartProps> = ({
                 y1={segment.y1}
                 x2={segment.x2}
                 y2={segment.y2}
-                stroke={`url(#lineGradient-${title.replace(/\s+/g, '-')})`}
-                strokeWidth={segment.isBold ? "6" : "4"}
+                stroke={segment.isBold ? '#ff0000' : `url(#lineGradient-${title.replace(/\s+/g, '-')})`  }
+                strokeWidth={segment.isBold ? "10" : "4"}
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 filter={`url(#shadow-${title.replace(/\s+/g, '-')})`}
+                
                 style={{
                   opacity: segment.opacity,
                   transition: `all 0.4s ease-out ${index * 0.3 + 0.8}s`
@@ -281,7 +282,7 @@ const LineChart: React.FC<LineChartProps> = ({
                     cx={x}
                     cy={animatedY}
                     r="20"
-                    fill="#3b82f6"
+                    fill="#3ff0000"
                     fillOpacity="0.1"
                     style={{
                       animation: 'pulse 2s infinite',

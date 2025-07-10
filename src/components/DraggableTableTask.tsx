@@ -4,6 +4,7 @@ import { CheckCircle, RotateCcw, Eye, EyeOff } from 'lucide-react';
 interface TableCell {
   value: string;
   isDropZone?: boolean;
+  isImage?: boolean; // New property to indicate if the cell contains an image
   isCorrect?: boolean;
   correctAnswer?: string;
   id?: string;
@@ -278,9 +279,13 @@ const DraggableTableTask: React.FC<DraggableTableTaskProps> = ({
                           </div>
                         )}
                       </div>
-                    ) : (
-                      cell.value
-                    )}
+                    ) : 
+                      cell.isImage ? (
+                        <img src={cell.value} alt="Draggable" className=" object-cover rounded-lg" />
+                      ) : (
+                        <span>{cell.value}</span>
+                      )
+                    }
                   </td>
                 ))}
               </tr>
