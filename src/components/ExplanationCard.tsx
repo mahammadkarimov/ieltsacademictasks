@@ -26,7 +26,14 @@ const ExplanationCard: React.FC<ExplanationCardProps> = ({
         
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-blue-900 mb-2">{title}</h3>
-          <p className="text-blue-800 leading-relaxed">{content}</p>
+          <p className="text-blue-800 leading-relaxed">
+            {content.split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
         </div>
       </div>
       {image && (

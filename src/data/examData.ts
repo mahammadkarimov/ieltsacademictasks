@@ -87,7 +87,7 @@ const examDataMap: Record<string, ExamData> = {
           "yAxisLabel": "",
           "data": [
             { "label": "2010", "value": 100, "isBold": false },
-            { "label": "2011", "value": 250, "isBold": true },
+            { "label": "2011", "value": 250, "isBold": false },
             { "label": "2012", "value": 250, "isBold": true }
          
           ]
@@ -104,7 +104,7 @@ const examDataMap: Record<string, ExamData> = {
           "yAxisLabel": "",
           "data": [
             { "label": "2010", "value": 200, "isBold": false },
-            { "label": "2011", "value": 100, "isBold": true },
+            { "label": "2011", "value": 100, "isBold": false },
             { "label": "2012", "value": 150, "isBold": true }
          
           ]
@@ -187,52 +187,8 @@ const examDataMap: Record<string, ExamData> = {
           ]
         }
       },
-      {
-        "isExplanation": true,
-        "explanationTitle": "Understanding Line Graph Vocabulary",
-        "explanationContent": "Line graphs show changes over time. Here are key vocabulary terms you'll need to describe trends: To be volatile",
-        "chart": {
-          "type": "line",
-          "title": "Sample Line Graph",
-          "xAxisLabel": "",
-          "yAxisLabel": "",
-          "data": [
-            { "label": "2010", "value": 100, "isBold": false },
-            { "label": "", "value": 180, "isBold": false },
-            { "label": "", "value": 150, "isBold": false },
-            { "label": "2011", "value": 100, "isBold": false },
-            { "label": "", "value": 200, "isBold": false },
-            { "label": "", "value": 150, "isBold": false },
-            { "label": "2012", "value": 200, "isBold": false },
-          
-         
-          ]
-        }
-      },
-      {
-        "isExplanation": true,
-        "explanationTitle": "Understanding Line Graph Vocabulary",
-        "explanationContent": "Line graphs show changes over time. Here are key vocabulary terms you'll need to describe trends: Oscillation (a back-and-forth motion about an equilibrium position)",
-        "chart": {
-          "type": "line",
-          "title": "Sample Line Graph",
-          "xAxisLabel": "",
-          "yAxisLabel": "",
-          "data": [
-            { "label": "2010", "value": 100, "isBold": false },
-            { "label": "", "value": 300, "isBold": false },
-            { "label": "2011", "value": 100, "isBold": false },
-            { "label": "", "value": 300, "isBold": false },
-            { "label": "2012", "value": 100, "isBold": false },
-            { "label": "", "value": 250, "isBold": false },
-            { "label": "2013", "value": 100, "isBold": false },
-            { "label": "", "value": 200, "isBold": false },
-            { "label": "2014", "value": 100, "isBold": false }
-          
-         
-          ]
-        }
-      },
+     
+    
       {
         "isExplanation": true,
         "explanationTitle": "Understanding Line Graph Vocabulary",
@@ -266,7 +222,7 @@ const examDataMap: Record<string, ExamData> = {
           "yAxisLabel": "",
           "data": [
             { "label": "2010", "value": 450, "isBold": false },
-            { "label": "", "value": 100, "isBold": false },
+            { "label": "", "value": 100, "isBold": true },
             { "label": "2011", "value": 300, "isBold": false },
             { "label": "2012", "value": 300, "isBold": false },
            
@@ -334,7 +290,7 @@ const examDataMap: Record<string, ExamData> = {
       {
         "isExplanation": true,
         "explanationTitle": "Understanding Line Graph Vocabulary",
-        "explanationContent": "Line graphs show changes over time. Here are key vocabulary terms you'll need to describe trends: To recover to,To rebound,To improve",
+        "explanationContent": "Line graphs show changes over time. Here are key vocabulary terms you'll need to describe trends: To recover to,To improve",
         "chart": {
           "type": "line",
           "title": "Sample Line Graph",
@@ -362,7 +318,7 @@ const examDataMap: Record<string, ExamData> = {
           "data": [
             { "label": "2010", "value": 400, "isBold": false },
             { "label": "2011", "value": 350, "isBold": false },
-            { "label": "", "value": 100, "isBold": false },
+            { "label": "", "value": 100, "isBold": true },
             { "label": "2012", "value": 200, "isBold": false },
             
          
@@ -398,9 +354,9 @@ const examDataMap: Record<string, ExamData> = {
           "xAxisLabel": "",
           "yAxisLabel": "",
           "data": [
-            { "label": "2010", "value": 100, "isBold": true },
+            { "label": "2010", "value": 100, "isBold": false },
             { "label": "2011", "value": 250, "isBold": false },
-            { "label": "", "value": 300, "isBold": false },
+            { "label": "", "value": 300, "isBold": true },
             { "label": "2012", "value": 200, "isBold": false },
             { "label": "2012", "value": 150, "isBold": false },
             
@@ -735,6 +691,11 @@ const examDataMap: Record<string, ExamData> = {
         "placeholder": "",
         multipleInputs: false,
       },
+      {
+        isExplanation: true,
+        explanationTitle: "Paraphrasing Rubrics",
+        explanationContent: "Select one of the following rubrics and paraphrase it. Select answer in the box and compare it with the sample answer provided.",
+      },
 {
         "question": "The line graph below shows the number of Germans who read detective books in Germany from 1990 to 1998.",
         "isChoice":true,
@@ -845,7 +806,7 @@ const examDataMap: Record<string, ExamData> = {
         multipleInputs: false,
       },
       {
-        "question": "Which overview for the following graph is correct?",
+        "question": "Choose the best overview for a description of the following graph.",
         "image" : "images/9.png",
         isChoice: true,
         "choices": [
@@ -858,7 +819,7 @@ const examDataMap: Record<string, ExamData> = {
         multipleInputs: false,
       },
       {
-        "question": "Which overview for the following graph is correct?",
+        "question": "Choose the best full answer for a description of the following graph.",
         "image" : "images/10.png",
         isChoice: true,
         "choices": [
@@ -1096,20 +1057,20 @@ const examDataMap: Record<string, ExamData> = {
         explanationContent: "Decrease slightly, however, in contrast, the smallest, likewise, a half, slipped to, the most popular type, the second most popular, compared to, the second most common, most significant change, while, by comparison"
       },
       {
-        "question": "Of the six movie genres, thriller was ..... in both years, accounting for 28% in 1973, although its proportion ….. five years later. The …..  occurred in 1978, when action films surged to 24%, becoming ….. genre. Another genre, adventure, stood at 18%, …..  20% five years earlier.…..  the other genres decreased in popularity. At the start of the period, western films were …..  type, attracting 22% of viewers; ….. , this figure slipped to 8% five years later, representing …..  share of the chart. ….. , crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— …..  than that of animation (12%), which emerged as a new genre in 1978.",
+        "question": "Of the six movie genres, thriller was ..... in both years, accounting for 28% in 1973, although its proportion ….. five years later. The …..  occurred in 1978, when action films surged to 24%, becoming ….. genre. Another genre, adventure, stood at 18%, …..  20% five years earlier. \n  …..  the other genres decreased in popularity. At the start of the period, western films were …..  type, attracting 22% of viewers; ….. , this figure slipped to 8% five years later, representing …..  share of the chart. ….. , crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— …..  than that of animation (12%), which emerged as a new genre in 1978.",
         "answer": ["the most popular type", "decreased slightly", "most significant change", "the second most popular", "compared to", "In contrast", "the second most common", "however", "the smallest", "Likewise", "slightly lower"],
         "placeholder": "Enter the word...",
         multipleInputs: true,
       },
       {
         "isExplanation": true,
-        "explanationTitle": "Spot the mistakes and correct them by using the words from the box.There are extra words in the box.",
+        "explanationTitle": "Spot the mistakes and correct them by using the words from the below.There are extra words in the box.",
         "explanationContent": "Words :In similar fashion, however, spend, while, but, difference, compared, on, to, is, spent",
         image: 'images/14.png'
         
       },
       {
-        question:"Overall the two pie charts show that smartphones and tablets are used for the same purposes but to very different extents the first pie chart shows how people spend their time on smartphones while the second pie chart illustrates how time is spent on tablets for both types of devices the top use is for games and the figures differ greatly 57% of the time spent on a tablet is given to playing games while only 35% of the time spent on a smartphone is used for this in contrast smartphone users spend 29% of their time on their gadget accessing social networking sites compared to just 15% of tablet time spent on the same activity the third most popular use of the tablet is for consuming entertainment with users spending 13% of their tablet time watching videos and listening to music likewise smartphone users dedicate only 8% of their smartphone time to such entertainment preferring instead to spend 20% of their time on their phone accessing utilities these can include maps weather information and calculators there is a clear difference in the way people are using their smartphones and tablets in general while tablets are being used more for gaming and other forms of entertainment smartphones seem to be the preferred option for tasks as well as communication with the world"
+        question:"Overall, the two pie charts show that smartphones and tablets are used for the same purposes but to very different extents. The first pie chart shows how people spend their time on smartphones, while the second pie chart illustrates how time is spent on tablets. For both types of devices, the top use is for games, and the figures differ greatly. 57% of the time spent on a tablet is given to playing games, while only 35% of the time spent on a smartphone is used for this. In contrast, smartphone users spend 29% of their time on their gadget accessing social networking sites compared with just 15% of tablet time spent on the same activity. The third most popular use of the tablet is for consuming entertainment, with users spending 13% of their tablet time watching videos and listening to music. However, smartphone users dedicate only 8% of their smartphone time to such entertainment, preferring instead to spend 20% of their time on their phone accessing utilities. These can include maps, weather information and calculators. There is a clear difference in the way people are using their smartphones and tablets. In general, while tablets are being used more for gaming and other forms of entertainment, smartphones seem to be the preferred option for tasks as well as communication with the world."
 ,     answer: ["In similar fashion", "however", "spend", "while", "but", "difference", "compared", "on", "to", "is", "spent"],
 
         placeholder: "Enter the word...",
@@ -1120,8 +1081,9 @@ const examDataMap: Record<string, ExamData> = {
         explanationContent:"The following task scores a low score. Improve it to get a higher score and then compare your version with the sample answer."
       },
       {
-        "question":"The pie charts below show the percentage of people in three countries who drank three types of drinks we can see from the charts that the percentages of people in Italy and Spain who drank cold drinks are 57 and 62 cold drinks had the lowest percentage in Japan and it made up 19 percent the figure for people drinking hot beverages was highest in Japan it was 53 percent on the other hand the people’s figures for hot drinks in Italy and Spain were 8 percent and 12 percent respectively alcoholic drinks had middle positions in three countries overall the main facts that stand out are that Italy and Spain had the highest figures in the usage of cold drinks but Japan had the lowest figure for cold drinks"
-,        "answer":"The pie charts describe the proportion of Italians Spanish and Japanese drinking three types of beverages in 2012 overall cold beverages were drunk predominantly in Italy and Spain whereas the opposite was true for hot drinks it is worth noting that in Japan hot beverages had a larger share of drinkers in Italy and Spain the percentages of cold beverage drinkers accounted for 57 and 62 respectively by contrast approximately three times less than of those proportions was observed in Japan which showed the least popularity in Japan making up just under a fifth the opposite pattern was noticed in the share of hot beverage drinkers in Japan its dominance reached more than half of the Japanese whereas this type of drink did not have popularity in Italy and Spain representing a minority of the whole chart with regard to alcoholic beverages dramatic differences were not observed as the people in the above mentioned three countries maintained middle positions more than a quarter of the Spanish and Japanese consumed this type of drink while the figure for Italians was roughly 8 percent higher at 35 percent in terms of cold beverage consumption Spain had the highest proportion at 62 percent followed closely by Italy at 57 percent in contrast only 19 percent of Japanese respondents preferred cold drinks making it the least popular category in Japan conversely hot drinks were most consumed in Japan accounting for 53 percent of total drinkers while they made up a significantly smaller share in Italy and Spain at 17 percent and 11 percent respectively as for alcoholic beverages the differences among the countries were relatively minor around 27 percent of both Spanish and Japanese respondents consumed alcohol while Italy had a slightly higher proportion at 35 percent"
+        "question":"The pie charts below show the percentage of people in three countries who drank three types of drinks.We can see from the charts that the percentages of people in Italy and Spain who drank cold drinks are 57 and 62.Cold drinks had the lowest percentage in Japan and it made up 19%.The figure for people drinking hot beverages was highest in Japan.It was 53%.On the other hand,the people’s figures for hot drinks in Italy and Spain were 8% and 12% respectively.Alcoholic drinks had middle positions in three countries.Overall,the main facts that stand out that Italy,Spain had the highest figures in the usage of cold drinks,but Japan had the lowest figure for cold drinks."
+,      image: 'images/53.png',
+  "answer":"The pie charts describe the proportion of Italians Spanish and Japanese drinking three types of beverages in 2012 overall cold beverages were drunk predominantly in Italy and Spain whereas the opposite was true for hot drinks it is worth noting that in Japan hot beverages had a larger share of drinkers in Italy and Spain the percentages of cold beverage drinkers accounted for 57 and 62 respectively by contrast approximately three times less than of those proportions was observed in Japan which showed the least popularity in Japan making up just under a fifth the opposite pattern was noticed in the share of hot beverage drinkers in Japan its dominance reached more than half of the Japanese whereas this type of drink did not have popularity in Italy and Spain representing a minority of the whole chart with regard to alcoholic beverages dramatic differences were not observed as the people in the above mentioned three countries maintained middle positions more than a quarter of the Spanish and Japanese consumed this type of drink while the figure for Italians was roughly 8 percent higher at 35 percent in terms of cold beverage consumption Spain had the highest proportion at 62 percent followed closely by Italy at 57 percent in contrast only 19 percent of Japanese respondents preferred cold drinks making it the least popular category in Japan conversely hot drinks were most consumed in Japan accounting for 53 percent of total drinkers while they made up a significantly smaller share in Italy and Spain at 17 percent and 11 percent respectively as for alcoholic beverages the differences among the countries were relatively minor around 27 percent of both Spanish and Japanese respondents consumed alcohol while Italy had a slightly higher proportion at 35 percent"
   ,      "placeholder": "",
 
       }
@@ -1155,12 +1117,12 @@ const examDataMap: Record<string, ExamData> = {
         placeholder: '',
       },
       {
-        question:"What similarities do you notice between six countries in the following table? The table below shows the production of fruit in 6 countries in 1992,2002 and 2012.",
+        question:"What similarities do you notice between six countries in the following table? \n The table below shows the production of fruit in 6 countries in 1992,2002 and 2012.",
         image: 'images/18.png',
         answer:"Poland,Portugal and the USA had higher figures.Besides,there was an upward trend in Japan,Poland,France,Italy,and the USA."
       },
       {
-        question:"What differences do you notice between six countries in the following table? The table below shows the production of fruit in 6 countries in 1992,2002 and 2012.",
+        question:"What differences do you notice between six countries in the following table? \n The table below shows the production of fruit in 6 countries in 1992,2002 and 2012.",
         image: 'images/18.png',
         answer:"Japan,France,and Italy had lower figures,whereas the rest countries had higher figures throughout the given time scale. Additionally, Portugal experienced a downward trend, in contrast to the generally upward trends observed in the remaining countries.."
       },
@@ -1171,7 +1133,8 @@ const examDataMap: Record<string, ExamData> = {
         image: 'images/19.png'
       },
       {
-        question:"The table graph gives information about the films which were released in the UK and Republic of Ireland by genre.\nThe number of releases was the highest from drama and documentary films accounting for 35 whereas the lowest figure for releases accounted for 1 from biopic. Total number of releases was 148 which was the highest indicator between others. Proportion of all releases from drama and documentary made up the highest score with 23.6% between other kinds. The lowest indicator for this type was biopic constituting 7%.\nPeople preferred to buy comedy films this proportion was just under a half. Individuals did not prefer to purchase romance films. Some people chose to go horror biopic drama considerably. The proportion of this was 20.2% 9.1% 2.3% respectively. The remaining proportion of income was from crime action and other respectively 4.7% 4.1% 3.2%. The total indicator of income and all releases was equal making up 100%.\nOverall the highest indicator from releases was from drama and documentary films with number and proportion while the percentage of income from ticket sales in comedy was the highest level.",
+        
+        question:"The table graph gives information about the films which was released in the UK and Republic of Ireland by genre.\nThe number of releases was the highest from drama and documentary films, accounting for 35, whereas the lowest figure for releases accounted for 1 from biopic.\nTotal number of releases was 148 which was the highest indicator between others.\nProportion of all releases from drama and documentary made up the highest score with 23.6% between other kinds.\nThe lowest indicator for this type was biopic, constituting 7%.\nPeople preferred to buy comedy films.\nThis proportion was just under a half.\nIndividuals did not prefer to purchase romance films.\nSome people chose to go horror, biopic, drama considerably.\nThe proportion of this was 20.2%, 9.1%, 2.3% respectively.\nThe remaining proportion of income was from crime, action and other, respectively 4.7%, 4.1%, 3.2%.\nThe total indicator of income and all releases was equal, making up 100%.\nOverall, the highest indicator from releases was from drama and documentary films with number and proportion, while the percentage of income from ticket sales in comedy was the highest level.",
         answer:"Task Achievement: • The candidate does not give as a clear report of main trends as it should have. You can write: The highest total in the categories of the number and percentage of films released was noticed in documentaries and dramas. However, the percentage of revenue taken in from ticket sales does not compare to the highest numbers in the other two categories as documentaries and dramas earned very little and the majority of money was generated by comedies. • The whole task is not focused properly. • The year is not mentioned in the introductory sentence. • Lacks clear overview. • Does not compare or describe trends effectively. TA scores band 5.0 Coherence and Cohesion • There is a problem with the order of the paragraphs. An overview should either come either after the introductory sentence or be written in a separate paragraph after the introduction. • There is a problem with the following sentence: Total number of releases was 148 which was the highest indicator between others. It is unnecessary to mention it as the candidate does not need to make a comparison here, and there is no linking word between this sentence and the sentence before and after this one. • Sentences are disconnected; poor use of linking devices. • There is no logical relationship between the following sentences: The lowest indicator for this type was biopic, constituting 7%. People preferred to buy comedy films. • There is no contrast cohesive device between the following sentences: Proportion of all releases from drama and documentary made up the highest score with 23.6% between other kinds. The lowest indicator for this type was biopic, constituting 7%. • It is unnecessary to mention the following sentence as we know that the total percentage equals to 100: The total indicator of income and all releases was equal, making up 100%. • Some errors in word choice cause coherence problems. • Transitions are weak or missing, making the text difficult to follow. • No clear grouping or logical organization of information It scores band 5.0 Lexical Resource: • A table and a graph are different things: The table graph gives information about the films which was released in the UK and Republic of Ireland. • The introductory sentence needs to be paraphrased as it is almost the same as it is in the rubric. • “Indicator” does not work in the following sentence. ”Type/kind/genre” is better. ”The percentage of income ….. was the highest level” sounds weird. • “Account for” is repeated in one sentence: The number of releases was the highest from drama and documentary films, accounting for 35, whereas the lowest figure for releases accounted for 1 from biopic. • “To go” should not be used in the sentence below. ”Considerably” is irrelevant. Some people chose to go horror, biopic, drama considerably. • Some collocations are unnatural: “made up the highest score,” “choose to go horror” It scores band 5.0. Grammatical Range and Accuracy: • A lack of complex structures • The candidate does not produce frequent error-free sentences. • Punctuation errors It scores band 5.0.)"
         ,placeholder: '',
       },
@@ -1210,11 +1173,68 @@ const examDataMap: Record<string, ExamData> = {
         answer:"The population growth rates of the listed countries can be split into two groups: those with positive growth and those experiencing a decline. Brazil, India, and Nigeria all maintained positive but slightly reduced growth rates from 2015 to 2020. In contrast, Germany and Japan saw a decrease in population, with Germany’s growth falling just below zero and Japan’s decline accelerating."
       },
       {
-        question:".Identify Logical GroupsTask: Given the table below showing the number of tourists (in thousands) visiting six countries over three years, group the countries based on similar trends or figures, and write a sentence for each group.",
+        question:"Identify Logical GroupsTask: Given the table below showing the number of tourists (in thousands) visiting six countries over three years, group the countries based on similar trends or figures, and write a sentence for each group.",
         image: 'images/22.png',
         answer:"The table reveals two clear groups of countries based on tourist numbers. France, Spain, and Italy consistently attracted the highest number of tourists, with figures close to or above 80,000 in 2018 and 2019, though these numbers dropped sharply in 2020. Conversely, the USA, Canada, and Australia saw lower but more stable tourist visits over the same period, with a smaller decline in 2020."
 
       },
+      {
+        isExplanation: true,
+        explanationTitle:"Listen to an assessor giving a student feedback on a practice IELTS Task 1 piece of writing.Identify and select the range (High Range,Mid-Range,Low Range) the feedback is related to for each criterion.",
+
+      },
+  
+      {
+        isExplanation: true,
+        explanationTitle: "Audio",
+        audio: 'audio/55.mp3',
+      },
+      {
+        image: 'images/55.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
+        
+      },
+      {
+        image: 'images/54.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
+        
+      },
+      {
+        image: 'images/56.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
+        
+      },
+      {
+        image: 'images/57.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
+        
+      },
+      
+
       
     
     ]
@@ -1486,18 +1506,18 @@ const examDataMap: Record<string, ExamData> = {
     timeLimit: '40 minutes',
     exercises: [
       {
-        question:"Paraphrase the following rubric.Type your answer in the box and compare it with the sample answer provided.The diagram below details the process of making clothes from plastic bottles.",
+        question:"Paraphrase the following rubric.Type your answer in the box and compare it with the sample answer provided. \n The diagram below details the process of making clothes from plastic bottles.",
         image:"images/39.png",
         answer:"The diagram explains the ways in which plastic bottles are reused to be transformed into clothing in the clothing manufacture"
 
       },
       {
-        question:"Paraphrase the following rubric.Type your answer in the box and compare it with the sample answer provided.The diagram below shows the life cycle of mosquito.",
+        question:"Paraphrase the following rubric.Type your answer in the box and compare it with the sample answer provided.\n The diagram below shows the life cycle of mosquito.",
         image:"images/40.png",
         answer:"The diagram illustrates several stages which the mosquito goes through in its life span."
       },
       {
-        question:"Paraphrase the following rubric.Type your answer in the box and compare it with the sample answer provided.The diagram below shows the life cycle of the plant with fruit.",
+        question:"Paraphrase the following rubric.Type your answer in the box and compare it with the sample answer provided.\n The diagram below shows the life cycle of the plant with fruit.",
         image:"images/41.png",
         answer:"The picture illustrates several stages that a plant goes through in its life cycle."
       },
@@ -1520,10 +1540,10 @@ const examDataMap: Record<string, ExamData> = {
       {
         isExplanation:true,
         explanationTitle:"Paragraphs",
-        explanationContent:"1)The control segment consists of a number of monitor stations at different locations on Earth and a  main control centre in Colorado, USA.  Any slight changes in the orbit of the satellites can be  detected by the monitor stations.  This information is then sent to the control centre, and from here it  is transmitted back to the satellites.  Consequently, the satellites can always transmit their exact  position to users. 2)The diagram shows how someone can find their exact location anywhere in the world by means of  the Global Positioning System (GPS).  3)The system has three main segments:  the space segment,  the control segment and the user segment. 4)The user segment is basically a hand¬held receiver capable of picking up signals from the satellites.  The receiver compares the time a signal was sent with the time it was received. As a result, the  distance between the user and the satellite can be calculated.  By taking similar measurements from four satellites, the receiver can pinpoint the exact location and altitude of the user on Earth. 5)The space segment consists of 24 satellites which are put into orbit at an altitude of about 20,000 km.  Each one takes 12 hours to orbit the earth once.  They have solar panels which provide power and antennae in order to receive and transmit data.  Each satellite continually transmits a coded message which includes information about its position and the exact time of transmission.  The satellites are  fitted with atomic clocks so that time is kept with great accuracy."
+        explanationContent:"1)The control segment consists of a number of monitor stations at different locations on Earth and a  main control centre in Colorado, USA.  Any slight changes in the orbit of the satellites can be  detected by the monitor stations.  This information is then sent to the control centre, and from here it  is transmitted back to the satellites.  Consequently, the satellites can always transmit their exact  position to users. \n 2)The diagram shows how someone can find their exact location anywhere in the world by means of  the Global Positioning System (GPS).  \n 3)The system has three main segments:  the space segment,  the control segment and the user segment. \n 4)The user segment is basically a hand¬held receiver capable of picking up signals from the satellites.  The receiver compares the time a signal was sent with the time it was received. As a result, the  distance between the user and the satellite can be calculated.  By taking similar measurements from four satellites, the receiver can pinpoint the exact location and altitude of the user on Earth. \n 5)The space segment consists of 24 satellites which are put into orbit at an altitude of about 20,000 km.  Each one takes 12 hours to orbit the earth once.  They have solar panels which provide power and antennae in order to receive and transmit data.  Each satellite continually transmits a coded message which includes information about its position and the exact time of transmission.  The satellites are  fitted with atomic clocks so that time is kept with great accuracy."
       },
       {
-        question:"The paragraphs below are out of order . Drag and drop the paragraphs in order to reorder them based on the diagram below : The diagram shows how the Global Positioning System (GPS) works in order to help people find their location anywhere on Earth.",
+        question:"The paragraphs above are out of order . Drag and drop the paragraphs in order to reorder them based on the diagram below \n The diagram shows how the Global Positioning System (GPS) works in order to help people find their location anywhere on Earth.",
         image: 'images/45.png',
         answer:"2,3,5,1,4",
         placeholder: "Enter the numbers of the paragraphs in the correct order, separated by commas."
@@ -1538,11 +1558,6 @@ const examDataMap: Record<string, ExamData> = {
         question:"The following task scores a low score. Improve it to get a higher score and then compare your version with the sample answer.The diagram below shows the life cycle of a plant with fruit.Summarise the information by selecting and reporting the main features,and make the comparisons where relevant.",
         image: 'images/46.png',
         answer:"The picture illustrates several stages that a plant with fruit goes through in its life cycle. Overall,the cyclical process consists of several developmental stages of a plant with fruit,including seed,germination,seedling,and maturity.The process commences when mature seeds from the fruit are planted in the soil.At this point of the process,water is added to stimulate germination.As the seeds begin to germinate,roots appear, develop and grow downward into the soil.In the following phase, a sprout emerges above the ground, producing its first leaves.,after which the young plant grows and becomes mature.After the leaves become larger in size,the plant begins to seedle,which is followed by the appearance of buds on the plant.After specific duration,buds bloom into flowers.The plant blossoms before producing fruit with seeds. Once the fruit ripens, seeds are extracted and can be replanted to begin the cycle again"
-      },
-      {
-        isExplanation:true,
-        explanationTitle: "Diagram",
-        image: 'images/47.png',
       }
     ] 
   }

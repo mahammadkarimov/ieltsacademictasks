@@ -75,25 +75,31 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
       );
     }
 
-  if(!isChoice){
-    return (
-      <input
-        type="text"
-        value={userAnswers[0] || ''}
-        onChange={(e) => handleInputChange(0, e.target.value)}
-        placeholder={Array.isArray(placeholder) ? placeholder[0] : placeholder}
-        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-        disabled={isSubmitted}
-      />
-    );
-  }
-  
+    if (!isChoice) {
+      return (
+        <input
+          type="text"
+          value={userAnswers[0] || ''}
+          onChange={(e) => handleInputChange(0, e.target.value)}
+          placeholder={Array.isArray(placeholder) ? placeholder[0] : placeholder}
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+          disabled={isSubmitted}
+        />
+      );
+    }
   };
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300">
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-gray-800 mb-3">{question}</h3>
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">
+          {question.split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </h3>
         {image && (
           <img 
             src={image} 
@@ -115,13 +121,18 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
                   disabled={isSubmitted}
                 />
                 <label htmlFor={`choice-${index}`} className="text-gray-700">
-                  {choice}
+                  {choice.split('\n').map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
                 </label>
               </div>
             ))}
           </div>
         )}    
-         {isChoice && choices.length > 0 && isChoiceImages && (
+        {isChoice && choices.length > 0 && isChoiceImages && (
           <div className="space-y-2 mb-4">
             {choices.map((choice, index) => (
               <div key={index} className="flex items-center">
@@ -134,14 +145,14 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
                   disabled={isSubmitted}
                 />
                 <label htmlFor={`choice-${index}`} className="text-gray-700">
-                  <img src={choice} alt="choice" width={400}  />
+                  <img src={choice} alt="choice" width={400} />
                 </label>
               </div>
             ))}
           </div>
         )} 
         {children}
-          </div>
+      </div>
       
       <div className="space-y-4">
         <div>
@@ -178,12 +189,22 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
                 <ul className="list-disc list-inside ml-2">
                   {userAnswers.map((ans, index) => (
                     <li key={index}>
-                      <span className="font-medium">{ans || '(empty)'}</span>
+                      {ans.split('\n').map((line, idx) => (
+                        <React.Fragment key={idx}>
+                          {line}
+                          <br />
+                        </React.Fragment>
+                      ))}
                     </li>
                   ))}
                 </ul>
               ) : (
-                <span className="font-medium">{userAnswers[0]}</span>
+                userAnswers[0].split('\n').map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))
               )}
             </div>
           </div>
@@ -199,20 +220,25 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
                 {answer.map((ans, index) => (
                   <li key={index}>
                     {isChoiceImages ? (
-                      <img src={ans} alt={`Choice ${index + 1}`} className="
-                      w-32 h-32 object-cover rounded-lg mb-2" />
-                    ) : <span className="font-semibold">{ans}</span>}
-                    
-                    
+                      <img src={ans} alt={`Choice ${index + 1}`} className="w-32 h-32 object-cover rounded-lg mb-2" />
+                    ) : ans.split('\n').map((line, idx) => (
+                      <React.Fragment key={idx}>
+                        {line}
+                        <br />
+                      </React.Fragment>
+                    ))}
                   </li>
                 ))}
               </ul>
             ) : (
               isChoiceImages ? (
-                <img src={answer} alt={`Choice`} className="
-                w-32 h-32 object-cover rounded-lg mb-2" />
-              ) : <span className="font-semibold">{answer}</span>
-              
+                <img src={answer} alt={`Choice`} className="w-32 h-32 object-cover rounded-lg mb-2" />
+              ) : answer.split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))
             )}
           </div>
         )}
