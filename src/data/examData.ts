@@ -563,25 +563,17 @@ const examDataMap: Record<string, ExamData> = {
         "placeholder": "Enter the verb...",
         multipleInputs: true,
       },
+    
       {
-        isExplanation: true,
-        explanationTitle: "Instructions",
-        explanationContent: "Look at the following line graph and fill in the gaps with the correct vocabulary. You should use no more than two words for each gap. Alternative answers that are equivalent in meaning may also be accepted upon submission."
-      },
-      {
-        "question": "At the beginning of the period, the majority of book sales were of detectives, at 25 % of all sales. Conversely, sci-fi was not popular as this genre of books had the lowest percentage at only 5%.Despite the fact that children’s books were also sold widely, they made up 15% of sales. As the sales of detective books began ….. , the percentage of sci-fi books started ….. in the first two years of the period, overtaking the sales of detective books. At the same time, the figure for children’s books ….. to 30% till the end of the period. The year of 2013 saw a ….. in the proportion of sci-fi books.",
+        "question": "Look at the following line graph and fill in the gaps with the correct vocabulary. You should use no more than two words for each gap. Alternative answers that are equivalent in meaning may also be accepted upon submission. \n \n \n  At the beginning of the period, the majority of book sales were of detectives, at 25 % of all sales. Conversely, sci-fi was not popular as this genre of books had the lowest percentage at only 5%.Despite the fact that children’s books were also sold widely, they made up 15% of sales. As the sales of detective books began ….. , the percentage of sci-fi books started ….. in the first two years of the period, overtaking the sales of detective books. At the same time, the figure for children’s books ….. to 30% till the end of the period. The year of 2013 saw a ….. in the proportion of sci-fi books.",
         "image": "images/3.png",
         "answer": ["stood at", "a peak", "decreasing dramatically","fluctuated slightly","hit a trough"],
         "placeholder": "Enter the verb...",
         multipleInputs: true,
       },
+    
       {
-        isExplanation: true,
-        explanationTitle: "Instructions",
-        explanationContent: "Look at the following line graph and then spot the mistakes, i.e. grammar, lexical,  and data , in the part of the following sample. Then see the answer after submitting your version."
-      },
-      {
-        "question": " There were always lower percentages of female members of parliament in Germany and Italy than those in the other countries. Germany and Italy experienced a different trend although Italy took the lead, making up nearly 40% at the end of the period. With regard  France, there was a stability to finish approximately 32% in 2012 after a slightly drop in 2004.In 2000, the lowest point was seen in the UK with roughly 3%.However, this figure fell substantial to 10% in 2004, followed by a continuous decline to hit its low 26% in 2013.",
+        "question": "Look at the following line graph and then spot the mistakes, i.e. grammar, lexical, and data , in the part of the following sample. Then see the answer after submitting your version. \n \n \n \n There were always lower percentages of female members of parliament in Germany and Italy than those in the other countries. Germany and Italy experienced a different trend although Italy took the lead, making up nearly 40% at the end of the period. With regard  France, there was a stability to finish approximately 32% in 2012 after a slightly drop in 2004.In 2000, the lowest point was seen in the UK with roughly 3%.However, this figure fell substantial to 10% in 2004, followed by a continuous decline to hit its low 26% in 2013.",
         "image": "images/4.png",
         "answer": ["stood at", "a peak", "decreasing dramatically","fluctuated slightly","hit a trough"],
         "placeholder": "Enter the verb...",
@@ -1046,18 +1038,10 @@ const examDataMap: Record<string, ExamData> = {
           ]
         }
       },
+ 
+      
       {
-        isExplanation: true,
-        explanationTitle: "Pie Chart Overview",
-        explanationContent: "Read the following paragraphs and type the appropriate words and phrases from the box in the gap. There are extra words."
-      },
-      {
-        isExplanation: true,
-        explanationTitle: "Words",
-        explanationContent: "Decrease slightly, however, in contrast, the smallest, likewise, a half, slipped to, the most popular type, the second most popular, compared to, the second most common, most significant change, while, by comparison"
-      },
-      {
-        "question": "Of the six movie genres, thriller was ..... in both years, accounting for 28% in 1973, although its proportion ….. five years later. The …..  occurred in 1978, when action films surged to 24%, becoming ….. genre. Another genre, adventure, stood at 18%, …..  20% five years earlier. \n  …..  the other genres decreased in popularity. At the start of the period, western films were …..  type, attracting 22% of viewers; ….. , this figure slipped to 8% five years later, representing …..  share of the chart. ….. , crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— …..  than that of animation (12%), which emerged as a new genre in 1978.",
+        "question": "Read the following paragraphs and type the appropriate words and phrases from above in the gap. There are extra words. \n \n \n \n Words : \n \n Decrease slightly, however, in contrast, the smallest, likewise, a half, slipped to, the most popular type, the second most popular, compared to, the second most common, most significant change, while, by comparison \n \n \n Of the six movie genres, thriller was ..... in both years, accounting for 28% in 1973, although its proportion ….. five years later. The …..  occurred in 1978, when action films surged to 24%, becoming ….. genre. Another genre, adventure, stood at 18%, …..  20% five years earlier. \n  …..  the other genres decreased in popularity. At the start of the period, western films were …..  type, attracting 22% of viewers; ….. , this figure slipped to 8% five years later, representing …..  share of the chart. ….. , crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— …..  than that of animation (12%), which emerged as a new genre in 1978.",
         "answer": ["the most popular type", "decreased slightly", "most significant change", "the second most popular", "compared to", "In contrast", "the second most common", "however", "the smallest", "Likewise", "slightly lower"],
         "placeholder": "Enter the word...",
         multipleInputs: true,
@@ -1070,9 +1054,9 @@ const examDataMap: Record<string, ExamData> = {
         
       },
       {
-        question:"Overall, the two pie charts show that smartphones and tablets are used for the same purposes but to very different extents. The first pie chart shows how people spend their time on smartphones, while the second pie chart illustrates how time is spent on tablets. For both types of devices, the top use is for games, and the figures differ greatly. 57% of the time spent on a tablet is given to playing games, while only 35% of the time spent on a smartphone is used for this. In contrast, smartphone users spend 29% of their time on their gadget accessing social networking sites compared with just 15% of tablet time spent on the same activity. The third most popular use of the tablet is for consuming entertainment, with users spending 13% of their tablet time watching videos and listening to music. However, smartphone users dedicate only 8% of their smartphone time to such entertainment, preferring instead to spend 20% of their time on their phone accessing utilities. These can include maps, weather information and calculators. There is a clear difference in the way people are using their smartphones and tablets. In general, while tablets are being used more for gaming and other forms of entertainment, smartphones seem to be the preferred option for tasks as well as communication with the world."
+        question:"Spot the mistakes and correct them by using the words from the below.There are extra words in the box. \n \n \n \n Words : \n In similar fashion, however, spend, while, but, difference, compared, on, to, is, spent \n\n\n\n Overall, the two pie charts show that smartphones and tablets are used for the same purposes but to very different extents. The first pie chart shows how people spend their time on smartphones, while the second pie chart illustrates how time is spent on tablets. For both types of devices, the top use is for games, and the figures differ greatly. 57% of the time spent on a tablet is given to playing games, while only 35% of the time spent on a smartphone is used for this. In contrast, smartphone users spend 29% of their time on their gadget accessing social networking sites compared with just 15% of tablet time spent on the same activity. The third most popular use of the tablet is for consuming entertainment, with users spending 13% of their tablet time watching videos and listening to music. However, smartphone users dedicate only 8% of their smartphone time to such entertainment, preferring instead to spend 20% of their time on their phone accessing utilities. These can include maps, weather information and calculators. There is a clear difference in the way people are using their smartphones and tablets. In general, while tablets are being used more for gaming and other forms of entertainment, smartphones seem to be the preferred option for tasks as well as communication with the world."
 ,     answer: ["In similar fashion", "however", "spend", "while", "but", "difference", "compared", "on", "to", "is", "spent"],
-
+        image:"images/14.png",
         placeholder: "Enter the word...",
         multipleInputs: true,},
       {
@@ -1086,6 +1070,70 @@ const examDataMap: Record<string, ExamData> = {
   "answer":"The pie charts describe the proportion of Italians Spanish and Japanese drinking three types of beverages in 2012 overall cold beverages were drunk predominantly in Italy and Spain whereas the opposite was true for hot drinks it is worth noting that in Japan hot beverages had a larger share of drinkers in Italy and Spain the percentages of cold beverage drinkers accounted for 57 and 62 respectively by contrast approximately three times less than of those proportions was observed in Japan which showed the least popularity in Japan making up just under a fifth the opposite pattern was noticed in the share of hot beverage drinkers in Japan its dominance reached more than half of the Japanese whereas this type of drink did not have popularity in Italy and Spain representing a minority of the whole chart with regard to alcoholic beverages dramatic differences were not observed as the people in the above mentioned three countries maintained middle positions more than a quarter of the Spanish and Japanese consumed this type of drink while the figure for Italians was roughly 8 percent higher at 35 percent in terms of cold beverage consumption Spain had the highest proportion at 62 percent followed closely by Italy at 57 percent in contrast only 19 percent of Japanese respondents preferred cold drinks making it the least popular category in Japan conversely hot drinks were most consumed in Japan accounting for 53 percent of total drinkers while they made up a significantly smaller share in Italy and Spain at 17 percent and 11 percent respectively as for alcoholic beverages the differences among the countries were relatively minor around 27 percent of both Spanish and Japanese respondents consumed alcohol while Italy had a slightly higher proportion at 35 percent"
   ,      "placeholder": "",
 
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Audio",
+        audio:"audios/audio2.mp3",
+      },
+      {
+        question:"Listen to an assessor giving a student feedback on a practice IELTS Task 1 piece of writing.Identify and select the range (High Range,Mid-Range,Low Range) the feedback is related to for each criterion.",
+        image: 'images/58.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Audio",
+        audio:"audios/audio3.mp3",
+      },
+      {
+        question:"Listen to an assessor giving a student feedback on a practice IELTS Task 1 piece of writing.Identify and select the range (High Range,Mid-Range,Low Range) the feedback is related to for each criterion.",
+        image: 'images/59.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Audio",
+        audio:"audios/audio4.mp3",
+      },
+      {
+        question:"Listen to an assessor giving a student feedback on a practice IELTS Task 1 piece of writing.Identify and select the range (High Range,Mid-Range,Low Range) the feedback is related to for each criterion.",
+        image: 'images/60.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Audio",
+        audio:"audios/audio5.mp3",
+      },
+      {
+        question:"Listen to an assessor giving a student feedback on a practice IELTS Task 1 piece of writing.Identify and select the range (High Range,Mid-Range,Low Range) the feedback is related to for each criterion.",
+        image: 'images/61.png',
+        isChoice: true,
+        choices: [
+          "High Range",
+          "Mid-Range",
+          "Low Range"
+        ],
+        answer: "High Range",
       }
     ]
   },
@@ -1272,93 +1320,37 @@ const examDataMap: Record<string, ExamData> = {
 
       },
       {
-        isExplanation: true,
-        explanationTitle: "List of phrases",
-        explanationContent: " A. what was once farmland, B. still stands as it did, C. over the whole period, D. has been extended since that time, E. has been expanded and converted…, F. Another significant change is that…, G. a population growth, H. One change that stands out is that…, I. The two maps illustrate."
+        question:"Insert the phrases below in a suitable blank space in the text, which follows. \n \n  A. what was once farmland\nB. still stands as it did\nC. over the whole period\nD. has been extended since that time\nE. has been expanded and converted…\nF. Another significant change is that…\nG. a population growth\nH. One change that stands out is that…\nI. The two maps illustrate\n \n \n \n1.____________ the developments that have taken place in town of Denham from 1986 to the present day\nOverall, the town has notably shown an increase in housing development which indicates 2.___________ and move away from agriculture and farming.\n3.___________ there has been a significant redevelopment 4.___________.\nTo the east of the river Stoke, housing now dominates the area of 5.___________.\nIn 1986, there were shops and just a few residential properties.\nNow there are neither shops nor farmland left, although the post office is still there.\nThe bridge over the river Stoke 6.___________ in 1986.\n7.____________ more roads have been built around the housing complex.\nIn addition, the gardens that were in front of the large house in 1986, have been removed and the house 8.___________ into a retirement home.\nThe primary school still stands and 9.___________.\n",
+        answer:[
+          'A',
+          'B',
+          'C',
+          'D',
+          'E',
+          'F',
+          'G',
+          'H',
+          'I'
+          ],
+          multipleInputs: true,
+          placeholder: 'Enter the letter of the correct answer...',
       },
       {
-        "chart": {
-          "type": "draggableTable",
-          "title": "Insert the phrases below in a suitable blank space in the text, which follows.",
-          "instructions": "Drag and drop the verb and noun phrases from the table to the column that shows their meaning. More than one phrase can match to one column.",
-          "data": [
-            {
-              "cells": [
-                { "value": "Sentence", "isDropZone": false },
-                { "value": "Phrase", "isDropZone": false }
-              ],
-              "isHeader": true
-            },
-            {
-              "cells": [
-                { "value": "1.____________ the developments that have taken place in town of Denham from 1986 to the present day", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "A", "id": "cell-1" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "Overall, the town has notably shown an increase in housing development which indicates 2.___________ and move away from agriculture and farming.", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "plateau", "id": "cell-2" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "3.___________ there has been a significant redevelopment ", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "plummet", "id": "cell-3" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "significant redevelopment 4.___________. To the east of the river stoke, housing now dominates the area of", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "rebound", "id": "cell-4" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "5.___________. In 1986, there were shops and just a few residential properties. Now there are neither shops nor farmland left, although the post office is still there. The bridge over the river Stoke", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "fluctuate", "id": "cell-5" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "6.___________ in 1986.", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "fluctuate", "id": "cell-5" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "7.____________ more roads have been built around the housing complex. In addition, the gardens that were in front of the large house in 1986 , have been removed and the house ", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "stabilize", "id": "cell-6" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "8.___________ and converted into a retirement home. The primary school still stands and has been extended since that time.", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "decline", "id": "cell-7" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "The primary school still stands and 9.___________.", "isDropZone": false },
-                { "value": "", "isDropZone": true, "correctAnswer": "illustrate", "id": "cell-8" }
-              ]
-            }
-
-          ],
-          "draggableItems": [
-            { "id": "item-1", "value": "surge" },
-          { "id": "item-2", "value": "what was once farmland" },
-          { "id": "item-3", "value": "still stands as it did" },
-          { "id": "item-4", "value": "over the whole period" },
-          { "id": "item-5", "value": "has been extended since that time" },
-          { "id": "item-6", "value": "has been expanded and converted…" },
-          { "id": "item-7", "value": "Another significant change is that…" },
-          { "id": "item-8", "value": "a population growth" },
-          { "id": "item-9", "value": "One change that stands out is that…" },
-          { "id": "item-10", "value": "The two maps illustrate" }
-          ]
-        }
-      },
+        question:"Choose the appropriate verb, which is correct in each case. Note there may be more than one suitable answer.\nIn this task, there are two maps referring to different tenses, the past (1986) and present. In this case, you will need to use the past tense and the present perfect to describe the changes\nThe two maps 1. [A. illustrate B. illustrates C. shows D. has depicted] the developments that 2. [A. takes place B. are taken place C. happened D. have taken place] in town of Denham from 1986 to the present day.\nOverall, the town 3. [A. show B. was C. showed D. has shown] an increase in housing development which 4. [A. have indicated B. was established C. indicates D. built] a population growth and move away from agriculture and farming.\nOne change that stands out is that there 5. [A. were B. was established C. had been D. has been] a significant redevelopment over the whole period. To the east of the river Stoke, housing now 6. [A. expanded B. dominates C. was built D. were constructed] the area of what was once farmland. In 1986, there 7. [A. were B. had been C. are D. was] shops and just a few residential properties. Now there are neither shops nor farmland left, although the post office is still there. The bridge over the river stoke still stands as it did in 1986.\nAnother significant change is that more roads 8. [A. have built B. was established C. was built D. have been built] around the housing complex. In addition, the gardens that were in front of the large house in 1986, 9. [A. have removed B. was constructed C. have been removed D. built] and the house has been expanded and converted into a retirement home. The primary school still stands and 10. [A. erects B. has been extended C. was expanded D. were converted] since that time.",
+        multipleInputs: true,
+        answer: [
+          'A',
+          'D',
+          'C',
+          'C',
+          'D',
+          'B',
+          'A',
+          'D',
+          'C',
+          'B'
+        ]
+      }
 
     ]
   },
@@ -1424,76 +1416,56 @@ const examDataMap: Record<string, ExamData> = {
 
       },
       {
-        question:"Look at the following bar chart. Write a paragraph about the males’ result, using the words and phrases in the box and then compare your answer with the sample after submitting it.",
+        question:"Look at the following bar chart. Write a paragraph about the males’ result, using the words and phrases from the below and then compare your answer with the sample after submitting it. \n\n\n\n\ Words : \n Range from … to, the highest figure, more noticeable, the lowest point, higher, dominated, on the contrary, respectively.",
         image: 'images/38.png',
         answer:'There were significant differences in the number of jobs held by men across different sectors, ranging from a low of 30,000 to a peak of 450,000. The highest male employment was recorded in the "other" category, where approximately 150,000 more men were employed compared to women. Male dominance was also evident in manufacturing and construction, with figures reaching 200,000 and 150,000 respectively. In contrast, the lowest levels of male employment were seen in education and healthcare, with only 30,000 and 40,000 men working in these sectors.'
         
       },
-      {
-        question:"Fill in the gaps, choosing the appropriate transition, conjunction and phrase in the box.There are extra words in the box.",
-        chart: {
-          type: 'draggableTable',
-          title: 'Match Fractions to Pie Chart Slices',
-          instructions: 'Drag and drop the correct fractions or expressions to match the pie chart slices.',
-          data: [
-            {
-              cells: [
-                { value: 'Pie Chart Slice', isDropZone: false },
-                { value: 'Fraction/Expression', isDropZone: false }
-              ],
-              isHeader: true
-            },
-            {
-              cells: [
-                { value: 'Social Networking', isDropZone: false },
-                { value: '', isDropZone: true, correctAnswer: '1/3', id: 'cell-1' }
-              ]
-            },
-            {
-              cells: [
-                { value: 'Video', isDropZone: false },
-                { value: '', isDropZone: true, correctAnswer: '1/4', id: 'cell-2' }
-              ]
-            },
-            {
-              cells: [
-                { value: 'Audio', isDropZone: false },
-                { value: '', isDropZone: true, correctAnswer: '1/6', id: 'cell-3' }
-              ]
-            },
-            {
-              cells: [
-                { value: 'Reading', isDropZone: false },
-                { value: '', isDropZone: true, correctAnswer: '1/6', id: 'cell-4' }
-              ]
-            },
-            {
-              cells: [
-                { value: 'News', isDropZone: false },
-                { value: '', isDropZone: true, correctAnswer: '1/12', id: 'cell-5' }
-              ]
-            },
-            {
-              cells: [
-                { value:'Game', isDropZone:false},
-                {value:'1/12',isDropZone:true,correctAnswer:'1/12',id:'cell-6'}
-              ]
-            }
-          ],
-          draggableItems:[
-            {id:'item-1',value:'Three-quarters'},
-            {id:'item-2',value:'a half'},
-            {id:'item-3',value:'three-fifths'},
-            {id:'item-4',value:'four-fifths'},
-            {id:'item-5',value:'almost a third'},
-            {id:'item-6',value:'a quarter'},
-            {id:'item-7',value:'seven in ten'},
-            {id:'item-8',value:'a significant proportion'},
-            {id:'item-9',value:'a minority'},
-            {id:'item-10',value:'nearly a half'},
-          ]
-        }
-      },
+     {
+      question:"Fill in the gaps, choosing the appropriate transition, conjunction and phrase in the box.There are extra words in the box. \n\n Words: \n whereas, by far the most popular, similarly, compared to, but, by contrast, however, and, likewise, more popular    \n\nMathematics was the preferred subject for male students; ….. , female students showed a greater interest in linguistics\nThe highest figure shows that literature was …..  subject for women.\nFootball was the favorite sport among boys, …..  girls showed a stronger preference for volleyball\nThe birth rate of older women increased. ….. , the percentage of teenage mothers decreased.\nIn the 19th century, Ireland’s population made up 8 million …..  Germany’s 20 million.",
+      multipleInputs: true,
+      answer: [
+        'however',
+        'by far the most popular',
+        'whereas',
+        'by contrast',
+        'compared to'
+      ],
+
+     },
+     {
+      question:"The paragraphs below are out of order.Reorder them based on the bar chart below. \n \n 1)Rome had the second-highest spending on the four services after London, surpassing the other two cities. Transport was the largest expenditure in Rome, accounting for 6.5% of household income. In contrast, health received the smallest share, with 4.5%, while education accounted for 5.5%. In Berlin, both health and education had equal allocations, each representing 4.2% of household spending, followed by restaurants and hotels, which received the lowest share  \n\n 2)The bar chart gives a description of the percentage of household expenditures on four services in four European cities in 2012. \n\n 3)London households spent significantly more on all four services than the other three nationalities, allocating 7% of their income to transport, which was 1.5% higher than their spending on restaurants and hotels. Education received the lowest share at 4.5%, slightly below the figure for health. Although Luxembourg and London showed similar spending patterns, Luxembourg consistently spent the least on all four services among the four cities. In Luxembourg, 4.5% of income was allocated to transport, followed by 3.5% to restaurants and hotels, which was 1% higher than the amount spent on education,being the least expended sector. \n\n 4)Among the four services, citizens allocated the largest proportion of their expenditure to transport. It is also noteworthy that Luxembourg and London displayed similar spending patterns. \n\n",
+      answer:"2, 4, 3, 1",
+      placeholder: "Enter the numbers of the paragraphs in the correct order, separated by commas."
+    },
+    {
+      question:"Choose the appropriate word from the box to fill the gap. Two answers are possible. \n\n Words : \n By contrast, while, although, yet, compared with, however, likewise, slightly higher, despite  \n\n\n 1. Approximately a fifth of the French read the adventure …..  the figure for the Spanish is 8 % higher, at 30%.\n2. Fish was consumed least in Japan. ….. , hamburger had a larger share of consumers in the same country.\n3. The French consumed 11 kg per person on a weekly basis. ….. , the Dutch consumed 9 kg.\n4. The consumption of fast food is .....  among Americans than Europeans.\n5. Basketball was still popular in Italy …..  its slight decrease 8 years later.\n6. Males spent more time on reading; ….. , females were more interested in cooking.\n7. The English spent 28% of their time on games …..  just 12% of their time on social networking.\n8. People aged 30-39, ….. , dedicate 20% of their time to gardening.",
+      multipleInputs: true,
+      answer: [
+        'while',
+        'By contrast',
+        'Likewise',
+        'slightly higher',
+        'despite',
+        'however',
+        'compared with',
+        'however'
+      ],
+      placeholder: 'Enter the correct word...'
+
+    },
+    {
+      question:"Write the language of comparison and contrast in the following paragraphs.Then see the answer. \n\n There was a considerable gender disparity across faculties, with Engineering predominantly staffed by male academics, whereas Education employed the highest proportion of female staff.\nSpecifically, 85% of Engineering faculty members were male, compared to only 15% who were female.\nIn contrast, women filled three quarters of the academic positions in education, with men accounting for just 25%.\nHowever, other faculties showed a more balanced gender distribution.\nIn medicine, the representation of men and women was nearly equal, while in the arts, slightly more than half of the academic staff were female (55%).\nNotably, both business and science had identical gender ratios, with 65% of the academics being male and 35% female.\nIn the field of law, the proportion of female staff was slightly higher than in business and science, standing at 40%.\nAlthough the faculties of engineering, business, science, and law remained predominantly male-dominated in 2012, women constituted half of the faculty in medicine and formed the majority in both education and the arts.",
+      image: 'images/62.png',
+      answer:"predominantly, whereas, compared to, in contrast, accounting for, however,more, nearly equal, slightly more than half, identical, slightly higher, although",
+    },
+    {
+      question:"The following task scores a low score. Improve it to get a higher score and then compare your version with the sample answer. \n\n The bar chart shows the causes of disturbance at the theatre.\nOverall, the most irritating action is rustling sweet papers. Its percentage is 90%.\nWe can see from the chart that the most percentage is belong to rustling sweet papers.\nThe next high percentage is coughing which makes up 75%.\nWhispering accounts for 60%.\nThe percentage of sneezing is 45%.\nSnoring disturbs 30% of the theatre-goers.\nMobile phones disturb 50% of the participants.\nThere are some irritants which are not related to noise.\nAmong them, arriving late has the highest percentage, at 70%.\nThe second highest in this group is tall people with 30%.\nBig hairdos irritates lower percentage of people.\nArmrest hogging has the lowest percentage in this group which makes up 20%.",
+      image:"images/63.png",
+      answer:"The bar chart illustrates the results of a survey conducted among theatre-goers regarding the causes of irritation during performances.\nOverall, most of the reported disturbances are related to noise, whereas those causing the least irritation are connected to non-noise factors.\nWith regard to noise factors, rustling sweet paper is the most irritating, affecting 90% of respondents, followed by coughing at approximately 75%.\nThe next most disturbing noises are mobile phone sounds and whispering, reported by just over 50% and just under 50% of participants, respectively.\nAmong noise-related irritations, flash photography is the least bothersome at around 25%, slightly lower than the proportions of snoring and bleeps.\nRegarding the non-noise factors, arriving late is the most distracting at about 70% compared to armrest hogging at 20%, which is the lowest point of the chart."
+    },
+
+    
 
 
 
@@ -1537,27 +1509,123 @@ const examDataMap: Record<string, ExamData> = {
         image: 'images/44.png',
         answer:"Overall,the cyclical process consists of several developmental stages of a plant with fruit,including seed,germination,seedling,and maturity."
       },
+     
       {
-        isExplanation:true,
-        explanationTitle:"Paragraphs",
-        explanationContent:"1)The control segment consists of a number of monitor stations at different locations on Earth and a  main control centre in Colorado, USA.  Any slight changes in the orbit of the satellites can be  detected by the monitor stations.  This information is then sent to the control centre, and from here it  is transmitted back to the satellites.  Consequently, the satellites can always transmit their exact  position to users. \n 2)The diagram shows how someone can find their exact location anywhere in the world by means of  the Global Positioning System (GPS).  \n 3)The system has three main segments:  the space segment,  the control segment and the user segment. \n 4)The user segment is basically a hand¬held receiver capable of picking up signals from the satellites.  The receiver compares the time a signal was sent with the time it was received. As a result, the  distance between the user and the satellite can be calculated.  By taking similar measurements from four satellites, the receiver can pinpoint the exact location and altitude of the user on Earth. \n 5)The space segment consists of 24 satellites which are put into orbit at an altitude of about 20,000 km.  Each one takes 12 hours to orbit the earth once.  They have solar panels which provide power and antennae in order to receive and transmit data.  Each satellite continually transmits a coded message which includes information about its position and the exact time of transmission.  The satellites are  fitted with atomic clocks so that time is kept with great accuracy."
-      },
-      {
-        question:"The paragraphs above are out of order . Drag and drop the paragraphs in order to reorder them based on the diagram below \n The diagram shows how the Global Positioning System (GPS) works in order to help people find their location anywhere on Earth.",
+        question:"The paragraphs above are out of order . Reorder them based on the diagram below \n Paragraphs : \n 1)The control segment consists of a number of monitor stations at different locations on Earth and a  main control centre in Colorado, USA.  Any slight changes in the orbit of the satellites can be  detected by the monitor stations.  This information is then sent to the control centre, and from here it  is transmitted back to the satellites.  Consequently, the satellites can always transmit their exact  position to users. \n 2)The diagram shows how someone can find their exact location anywhere in the world by means of  the Global Positioning System (GPS).  \n 3)The system has three main segments:  the space segment,  the control segment and the user segment. \n 4)The user segment is basically a hand¬held receiver capable of picking up signals from the satellites.  The receiver compares the time a signal was sent with the time it was received. As a result, the  distance between the user and the satellite can be calculated.  By taking similar measurements from four satellites, the receiver can pinpoint the exact location and altitude of the user on Earth. \n 5)The space segment consists of 24 satellites which are put into orbit at an altitude of about 20,000 km.  Each one takes 12 hours to orbit the earth once.  They have solar panels which provide power and antennae in order to receive and transmit data.  Each satellite continually transmits a coded message which includes information about its position and the exact time of transmission.  The satellites are  fitted with atomic clocks so that time is kept with great accuracy. \n\n\n \n The diagram shows how the Global Positioning System (GPS) works in order to help people find their location anywhere on Earth.",
         image: 'images/45.png',
         answer:"2,3,5,1,4",
         placeholder: "Enter the numbers of the paragraphs in the correct order, separated by commas."
       },
      
       {
-        isExplanation: true,
-        explanationTitle: "Sample answer",
-        explanationContent: "The diagram shows different stages of the life cycle of a plant with fruit.The process begins with the seed.The workers plant the seed  and add the water.It is followed by the process of germination.Then the sprout process happens.The sprout grows and become a young plant.The leaves become bigger,and this plant begins to seedle.In the next stage,the buds appear.After some time,the buds change into flowers.Following this,fruit is formed.Next,the fruit with seeds is picked to collect the seeds.The cycle is then repeated."
-      },
-      {
-        question:"The following task scores a low score. Improve it to get a higher score and then compare your version with the sample answer.The diagram below shows the life cycle of a plant with fruit.Summarise the information by selecting and reporting the main features,and make the comparisons where relevant.",
+        question:"The following task scores a low score. Improve it to get a higher score and then compare your version with the sample answer.  \n\n The diagram below shows the life cycle of a plant with fruit.Summarise the information by selecting and reporting the main features,and make the comparisons where relevant.  \n\n Sample answer : \n\n The diagram shows different stages of the life cycle of a plant with fruit.The process begins with the seed.The workers plant the seed  and add the water.It is followed by the process of germination.Then the sprout process happens.The sprout grows and become a young plant.The leaves become bigger,and this plant begins to seedle.In the next stage,the buds appear.After some time,the buds change into flowers.Following this,fruit is formed.Next,the fruit with seeds is picked to collect the seeds.The cycle is then repeated.",
         image: 'images/46.png',
         answer:"The picture illustrates several stages that a plant with fruit goes through in its life cycle. Overall,the cyclical process consists of several developmental stages of a plant with fruit,including seed,germination,seedling,and maturity.The process commences when mature seeds from the fruit are planted in the soil.At this point of the process,water is added to stimulate germination.As the seeds begin to germinate,roots appear, develop and grow downward into the soil.In the following phase, a sprout emerges above the ground, producing its first leaves.,after which the young plant grows and becomes mature.After the leaves become larger in size,the plant begins to seedle,which is followed by the appearance of buds on the plant.After specific duration,buds bloom into flowers.The plant blossoms before producing fruit with seeds. Once the fruit ripens, seeds are extracted and can be replanted to begin the cycle again"
+      },
+      {
+        question:"The paragraphs below are out of order . Reorder them based on the diagram below. \n The diagram shows how the Global Positioning System (GPS) works in order to help people find their location anywhere on Earth. \n\n Paragraphs : \n 1)The control segment consists of a number of monitor stations at different locations on Earth and a  main control centre in Colorado, USA.  Any slight changes in the orbit of the satellites can be  detected by the monitor stations.  This information is then sent to the control centre, and from here it  is transmitted back to the satellites.  Consequently, the satellites can always transmit their exact  position to users. \n 2)The diagram shows how someone can find their exact location anywhere in the world by means of  the Global Positioning System (GPS). \n 3)The system has three main segments:  the space segment,  the control segment and the user segment. \n 4)The user segment is basically a hand¬held receiver capable of picking up signals from the satellites.  The receiver compares the time a signal was sent with the time it was received. As a result, the  distance between the user and the satellite can be calculated.  By taking similar measurements from four satellites, the receiver can pinpoint the exact location and altitude of the user on Earth. \n 5)The space segment consists of 24 satellites which are put into orbit at an altitude of about 20,000 km.  Each one takes 12 hours to orbit the earth once.  They have solar panels which provide power and antennae in order to receive and transmit data.  Each satellite continually transmits a coded message which includes information about its position and the exact time of transmission.  The satellites are  fitted with atomic clocks so that time is kept with great accuracy.",
+        image: 'images/64.png',
+        answer:"2,3,5,1,4",
+        placeholder: "Enter the numbers of the paragraphs in the correct order, separated by commas."
+      },
+      {
+        question:"The following task scores a low score. Improve it to get a higher score and then compare your version with the sample answer. \n \n The diagram below shows the life cycle of a plant with fruit.Summarise the information by selecting and reporting the main features,and make the comparisons where relevant.  \n\n  Sample answer: \n The diagram shows different stages of the life cycle of a plant with fruit. \n The process begins with the seed.The workers plant the seed  and add the water.It is followed by the process of germination.Then the sprout process happens.The sprout grows and become a young plant.The leaves become bigger,and this plant begins to seedle.In the next stage,the buds appear.After some time,the buds change into flowers.Following this,fruit is formed.Next,the fruit with seeds is picked to collect the seeds.The cycle is then repeated.",
+        image: 'images/46.png',
+        answer:"The picture illustrates several stages that a plant with fruit goes through in its life cycle. Overall,the cyclical process consists of several developmental stages of a plant with fruit,including seed,germination,seedling,and maturity.\nThe process commences when mature seeds from the fruit are planted in the soil.At this point of the process,water is added to stimulate germination.As the seeds begin to germinate,roots appear, develop and grow downward into the soil.In the following phase, a sprout emerges above the ground, producing its first leaves.,after which the young plant grows and becomes mature.After the leaves become larger in size,the plant begins to seedle,which is followed by the appearance of buds on the plant.After specific duration,buds bloom into flowers.The plant blossoms before producing fruit with seeds. Once the fruit ripens, seeds are extracted and can be replanted to begin the cycle again."
+      },
+      {
+        question:"Look at the diagram below. Complete this description of the process by using and below. \n\n Phrases : \n as a result,because,causes,consequently,due,give rise to,on account of,results in \n\n Water leaks slowly into the cave 1……… there are thousands of tiny cracks and holes in the limestone rock. On its way down, the water absorbs the calcium carbonate present in the rock and this 2……… a mineral solution. Small drops of this solution form on the roof of the cave. When each drop falls, it leaves behind a ring-shaped deposit of calcite. This process is repeated many times and 3……… a thin calcite tube is formed. This tube is sometimes called a soda straw 4……… its shape. Occasionally the soda straw gets blocked 5……… to a piece of stone or soil. This 6……… the drops of solution to pour down the outside of the straw. 7………, calcite deposits build up around the straw and these 8……… the typical cone shape of the stalactite. Only the straws that get blocked will eventually become stalactites. ",
+        answer: [
+          'because',
+          'results in',
+          'as a result',
+          'on account of',
+          'due',
+          'causes',
+          'consequently',
+          'give rise to'
+        ],
+        multipleInputs: true,
+        image:'images/65.png',
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Task Instruction",
+        explanationContent:"Now look at the following active sentences and rewrite them in the passive voice."
+      },
+      {
+        question:"Many farmers grow rice in China.",
+        answer:"Rice is grown in China.",
+      },
+      {
+        question:"Trucks transport the ready products to customers.",
+        answer:"The ready products are transported to customers.",
+      },
+      {
+        question:"The worker waters the plants to grow.",
+        answer:"The plants are watered to be grown.",
+      },
+      {
+        question:"They use plastic bottles to make clothes.",
+        answer:"Plastic bottles are used to make clothes.",
+      },
+      {
+        question:"They add water and sand to the mixture.",
+        answer:"Water and sand are added to the mixture."
+      },
+      {
+        question:"Join two sentences together into a single sentence with the subordinators.You can use more than one version.Then submit your answer and see the provided answer.\nThe tomatoes are picked.Then they are immediately transported to the factory by truck.",
+        answer:[
+          "After the tomatoes are picked,they are transported to the factory by truck.",
+          "Once the tomatoes have been picked,they are transported to the factory.",
+          "Having been picked,the tomatoes are transported to the factory."
+        ]
+      },
+      {
+        question:"Join two sentences together into a single sentence with the subordinators.You can use more than one version.Then submit your answer and see the provided answer.\n The tomatoes are transported to the factory.Then they are washed.",
+        answer:['Before the tomatoes are washed,they are transported to the factory', 'The tomatoes are transported to the factory,which is followed by the washing process', 'The tomatoes are transported to the factory prior to being washed', ' After the tomatoes are transported to the factory,they are washed', ' Once the tomatoes have been transported to the factory,they are washed', 'Having been transported to the factory,the tomatoes are washed there']
+
+      },
+      {
+        isExplanation: true,
+        explanationTitle: "Task Instruction",
+        explanationContent:"Look at these ways of explaining or expressing the purpose of something. Choose the best way to complete the sentences.",
+
+      },
+      {
+        question:"The vegetables are washed ….. remove the impurities",
+        isChoice: true,
+        choices: [
+          "in order to",
+          "so as",
+          "to"
+        ],
+        answer: "in order to"
+      },
+      {
+        question:"The special tools are used ….. the products can be weighed accurately.",
+        isChoice: true,
+        choices: [
+          "so that",
+          "so as",
+          "in order to"
+        ],
+        answer: "so that"
+      },
+      {
+        question:"….. dry in the sun,the leather is hung over the rope.",
+        isChoice: true,
+        choices: [
+          "in order to",
+          "so as",
+          "to"
+        ],
+        answer: "in order to"
+      },
+      {
+        question:"Write down the sequential language in the following paragraphs. \n In the initial stage of the process, mangoes are grown in mango fields prior to being gathered as a harvest. Harvested fruits are then carried to the factory by truck to be processed. The subsequent stage is when mangoes are sorted in the factory so that the quality of mango juice could be ensured. As the fruits are selected,the rotten ones are delivered to farms in order to be used as animal feed. \n\n\nFollowing the selection stage, the high-quality mangoes are exposed to the process of washing. Once the fruits have been cleaned, they are then ready for preheating. Having undergone the process of preheating , they are removed from gasses, after which the degassed mangoes, destined to become mango juice, are homogenized. The resulting liquid then goes through sterilization which precedes the penultimate step, followed by packing. The last step involves transportation to dispatch ready products to their final destinations.\n",
+        answer:"In the initial stage,then,The subsequent stage,Following,Once,the penultimate step,followed by,the last step",
+        
       }
     ] 
   }
