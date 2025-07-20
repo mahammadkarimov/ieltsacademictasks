@@ -184,7 +184,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
         {isSubmitted && (
           <div className={`p-4 rounded-lg ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
             <p className={`font-medium ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
-              {isCorrect  ? isChoice ? '✓ Correct!' : '✗ Incorrect' : ''}
+              {isChoice  ? isCorrect ? '✓ Correct!' : '✗ Incorrect' : ''}
             </p>
             <div className="text-sm text-gray-600 mt-1">
               <p>Your answer{multipleInputs ? 's' : ''}:</p>

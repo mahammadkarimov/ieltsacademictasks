@@ -394,128 +394,74 @@ const examDataMap: Record<string, ExamData> = {
             {
               "cells": [
                 { "value": "Trend Description", "isDropZone": false },
-                { "value": "Vocabulary Term", "isDropZone": false }
+                { "value": "Vocabulary Term", "isDropZone": false },
+                { "value": "Vocabulary Term", "isDropZone": false },
               ],
               "isHeader": true
             },
             {
               "cells": [
                 { "value": "images/48.png", "isDropZone": false,isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "surge", "id": "cell-1" }
+                { "value": "", "isDropZone": true, "correctAnswer": "to rise sharply", "id": "cell-1" },
+                { "value": "", "isDropZone": true, "correctAnswer": "increase considerably", "id": "cell-11" }
               ]
             },
             {
               "cells": [
                 { "value": "images/49.png", "isDropZone": false,isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "plateau", "id": "cell-2" },
+                { "value": "", "isDropZone": true, "correctAnswer": "to remain static", "id": "cell-2" },
+                { "value": "", "isDropZone": true, "correctAnswer": "to level off", "id": "cell-21" },
               ]
             },
             {
               "cells": [
                 { "value": "images/50.png", "isDropZone": false, isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "plummet", "id": "cell-3" }
+                { "value": "", "isDropZone": true, "correctAnswer": "to decrease noticeably", "id": "cell-3" },
+                { "value": "", "isDropZone": true, "correctAnswer": "to plummet", "id": "cell-31" }
               ]
             },
             {
               "cells": [
                 { "value": "images/51.png", "isDropZone": false , isImage: true},
-                { "value": "", "isDropZone": true, "correctAnswer": "rebound", "id": "cell-4" }
+                { "value": "", "isDropZone": true, "correctAnswer": "to drop gradually", "id": "cell-4" },
+                { "value": "", "isDropZone": true, "correctAnswer": "to fall slightly", "id": "cell-41" }
               ]
             },
             {
               "cells": [
                 { "value": "images/52.png", "isDropZone": false, isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "fluctuate", "id": "cell-5" }
+                { "value": "", "isDropZone": true, "correctAnswer": "to increase marginally", "id": "cell-5" },
+                { "value": "", "isDropZone": true, "correctAnswer": "to grow gradually", "id": "cell-51" }
               ]
-            }
+            },
+            {
+              "cells": [
+                { "value": "images/73.png", "isDropZone": false, isImage: true },
+                { "value": "", "isDropZone": true, "correctAnswer": "drastically", "id": "cell-6" },
+                { "value": "", "isDropZone": true, "correctAnswer": "steeply", "id": "cell-61" }
+              ]
+            },
           ],
           "draggableItems": [
             
-              { "id": "item-1", "value": "a slight drop" },
-              { "id": "item-2", "value": "a significant increase" },
-              { "id": "item-3", "value": "to plunge" },
-              { "id": "item-4", "value": "a leap" },
-              { "id": "item-5", "value": "erratic" },
-              { "id": "item-6", "value": "a remarkable growth" },
-              { "id": "item-7", "value": "to hit a low" },
-              { "id": "item-8", "value": "static" },
-              { "id": "item-9", "value": "to jump" },
-              { "id": "item-10", "value": "fluctuation" },
-              { "id": "item-11", "value": "to decrease marginally" },
-              { "id": "item-12", "value": "to reach a trough" },
-              { "id": "item-13", "value": "a peak point" },
-              { "id": "item-14", "value": "to decrease drastically" },
-              { "id": "item-15", "value": "to dip" },
-              { "id": "item-16", "value": "to increase gradually" },
-              { "id": "item-17", "value": "to reach a high" },
-              { "id": "item-18", "value": "plateau" },
-              { "id": "item-19", "value": "to rise steadily" }
+            { id: "item-1", value: "to rise sharply" },
+            { id: "item-2", value: "increase considerably" },
+            { id: "item-3", value: "to remain static" },
+            { id: "item-4", value: "to level off" },
+            { id: "item-5", value: "to decrease noticeably" },
+            { id: "item-6", value: "to plummet" },
+            { id: "item-7", value: "to drop gradually" },
+            { id: "item-8", value: "to fall slightly" },
+            { id: "item-9", value: "to increase marginally" },
+            { id: "item-10", value: "to grow gradually" },
+            { id: "item-11", value: "drastically" },
+            { id: "item-12", value: "steeply" }
 
           
           ]
         }
       },
-      {
-        "chart": {
-          "type": "draggableTable",
-          "title": "Match Vocabulary Terms to Trend Descriptions",
-          "instructions": "Drag and drop the verb and noun phrases from the table to the column that shows their meaning. More than one phrase can match to one column.",
-          "data": [
-            {
-              "cells": [
-                { "value": "Trend Description", "isDropZone": false },
-                { "value": "Vocabulary Term", "isDropZone": false }
-              ],
-              "isHeader": true
-            },
-            {
-              "cells": [
-                { "value": "images/48.png", "isDropZone": false,isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "surge", "id": "cell-1" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "images/49.png", "isDropZone": false,isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "plateau", "id": "cell-2" },
-              ]
-            },
-            {
-              "cells": [
-                { "value": "images/50.png", "isDropZone": false, isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "plummet", "id": "cell-3" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "images/51.png", "isDropZone": false , isImage: true},
-                { "value": "", "isDropZone": true, "correctAnswer": "rebound", "id": "cell-4" }
-              ]
-            },
-            {
-              "cells": [
-                { "value": "images/52.png", "isDropZone": false, isImage: true },
-                { "value": "", "isDropZone": true, "correctAnswer": "fluctuate", "id": "cell-5" }
-              ]
-            }
-          ],
-          "draggableItems": [
-          
-              { "id": "item-1", "value": "slightly" },
-              { "id": "item-2", "value": "gradually" },
-              { "id": "item-3", "value": "drastically" },
-              { "id": "item-4", "value": "considerably" },
-              { "id": "item-5", "value": "dramatically" },
-              { "id": "item-6", "value": "negligibly" },
-              { "id": "item-7", "value": "sharply" },
-              { "id": "item-8", "value": "steadily" },
-              { "id": "item-9", "value": "noticeably" },
-              { "id": "item-10", "value": "steeply" }
-          
-          
-          ]
-        }
-      },
+     
       {
         isExplanation: true,
         explanationTitle: "Listening Exercise",
@@ -532,9 +478,16 @@ const examDataMap: Record<string, ExamData> = {
           "xAxisLabel": "Months",
           "yAxisLabel": "House sales",
       
-          "maxValue": 250,
+          "maxValue": 1000000,
           "data": [
             { "label": "2010", "value": 600000, "isBold": false },
+            { "label": "2012", "value": 300000, "isBold": false },
+            { "label": "2013", "value": 350000, "isBold": false },
+            { "label": "2014", "value": 100000, "isBold": false },
+            { "label": "2016", "value": 650000, "isBold": false },
+            { "label": "2017", "value": 650000, "isBold": false },
+            { "label": "2018", "value": 650000, "isBold": false },
+            { "label": "2020", "value": 550000, "isBold": false },
            
           ]
         }
@@ -979,13 +932,13 @@ const examDataMap: Record<string, ExamData> = {
             {
               cells: [
                 { value: 'images/item-3.png', isDropZone: false,isImage:true },
-                { value: '', isDropZone: true, correctAnswer: 'almost a third', id: 'cell-3' }
+                { value: '', isDropZone: true, correctAnswer: 'Three-fifths', id: 'cell-3' }
               ]
             },
             {
               cells: [
                 { value: 'images/item-4.png', isImage:true, isDropZone: false },
-                { value: '', isDropZone: true, correctAnswer: '', id: 'cell-4' }
+                { value: '', isDropZone: true, correctAnswer: 'four-fifths', id: 'cell-4' }
               ]
             },
             {
