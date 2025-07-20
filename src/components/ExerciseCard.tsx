@@ -32,6 +32,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
 
   const handleSubmit = () => {
     setIsSubmitted(true);
+    setShowAnswer(true);
   };
 
   const handleInputChange = (index: number, value: string) => {
@@ -92,13 +93,14 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-6 border border-gray-200 hover:shadow-lg transition-shadow duration-300">
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-gray-800 mb-3">
+        <h3 className="text-lg text-gray-800 mb-3">
           {question.split('\n').map((line, index) => (
             <React.Fragment key={index}>
-              {line}
+              <span dangerouslySetInnerHTML={{ __html: line }} />
               <br />
             </React.Fragment>
           ))}
+          
         </h3>
         {image && (
           <img 
@@ -143,6 +145,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
                   value={choice}
                   className="mr-2"
                   disabled={isSubmitted}
+                  onChange={(e) => handleInputChange(0, e.target.value)}
                 />
                 <label htmlFor={`choice-${index}`} className="text-gray-700">
                   <img src={choice} alt="choice" width={400} />
@@ -181,31 +184,39 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
         {isSubmitted && (
           <div className={`p-4 rounded-lg ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
             <p className={`font-medium ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
-              {isCorrect ? '✓ Correct!' : '✗ Incorrect'}
+              {isCorrect  ? isChoice ? '✓ Correct!' : '✗ Incorrect' : ''}
             </p>
             <div className="text-sm text-gray-600 mt-1">
               <p>Your answer{multipleInputs ? 's' : ''}:</p>
-              {multipleInputs ? (
+                {multipleInputs ? (
                 <ul className="list-disc list-inside ml-2">
                   {userAnswers.map((ans, index) => (
-                    <li key={index}>
-                      {ans.split('\n').map((line, idx) => (
-                        <React.Fragment key={idx}>
-                          {line}
-                          <br />
-                        </React.Fragment>
-                      ))}
-                    </li>
+                  <li key={index}>
+                    {isChoiceImages ? (
+                    <img src={ans} alt={`Answer ${index + 1}`} className="w-32 h-32 object-cover rounded-lg mb-2" />
+                    ) : (
+                    ans.split('\n').map((line, idx) => (
+                      <React.Fragment key={idx}>
+                      {line}
+                      <br />
+                      </React.Fragment>
+                    ))
+                    )}
+                  </li>
                   ))}
                 </ul>
-              ) : (
-                userAnswers[0].split('\n').map((line, index) => (
+                ) : (
+                isChoiceImages ? (
+                  <img src={userAnswers[0]} alt="Answer" className="w-32 h-32 object-cover rounded-lg mb-2" />
+                ) : (
+                  userAnswers[0].split('\n').map((line, index) => (
                   <React.Fragment key={index}>
                     {line}
                     <br />
                   </React.Fragment>
-                ))
-              )}
+                  ))
+                )
+                )}
             </div>
           </div>
         )}
