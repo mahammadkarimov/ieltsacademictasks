@@ -572,8 +572,8 @@ const examDataMap: Record<string, ExamData> = {
       },
     {
       isExplanation: true,
-      explanationTitle: "Tasks",
-      explanationContent: "Choose the best introductory sentence for a description of the following graph.",
+      explanationTitle: "Paraphrasing Rubric",
+      explanationContent: "Paraphrase the following rubric. Type your answer in the box and compare it with the sample answer provided.",
     },
       {
         "question": "The line graph below describes monthly expenditures on household appliances in Norway between 1994 and 2004.",
@@ -635,8 +635,8 @@ const examDataMap: Record<string, ExamData> = {
       },
       {
         isExplanation: true,
-        explanationTitle: "Paraphrasing Rubrics",
-        explanationContent: "Select one of the following rubrics and paraphrase it. Select answer in the box and compare it with the sample answer provided.",
+        explanationTitle: "Tasks",
+        explanationContent: "Choose the best introductory sentence for a description of the following graph.",
       },
 {
         "question": "The line graph below shows the number of Germans who read detective books in Germany from 1990 to 1998.",
@@ -735,7 +735,7 @@ const examDataMap: Record<string, ExamData> = {
         multipleInputs: false,
       },
       {
-        "question": "Which overview for the following graph is correct?",
+        "question": "Choose the best overview for a description of the following graph.",
         "image" : "images/8.png",
         isChoice: true,
         "choices": [
@@ -776,7 +776,7 @@ const examDataMap: Record<string, ExamData> = {
         isExplanation: true,
         explanationTitle: "Task",
         image:"images/67.png",
-        explanationContent: "Read the following sample and then answer the questions given below. \n\n The line graph compares the number of Canadian women who married. 1992 also experienced females who married younger than any other year with peak marriage number in the 20 to 24 age group. In contrast, in 1972 and 2000 this peak happened later in the age bracket of 25-29.\nFor women aged 30-34, negligible differences were observed in the three years mentioned in spite of the figures for 1992 being marginally larger than in either 1972 or 2012.\nAs can be seen from the line graph, marriage numbers within every age group were greater in 1992 than in other years. It is particularly obvious in the age range of 20-24 where approximately 5000 women married in 1992.\nOverall, it is clear that women married more at every age group in 1992.",
+        explanationContent: "Analyze the following sample and then answer the questions given below. \n\n The line graph compares the number of Canadian women who married. 1992 also experienced females who married younger than any other year with peak marriage number in the 20 to 24 age group. In contrast, in 1972 and 2000 this peak happened later in the age bracket of 25-29.\nFor women aged 30-34, negligible differences were observed in the three years mentioned in spite of the figures for 1992 being marginally larger than in either 1972 or 2012.\nAs can be seen from the line graph, marriage numbers within every age group were greater in 1992 than in other years. It is particularly obvious in the age range of 20-24 where approximately 5000 women married in 1992.\nOverall, it is clear that women married more at every age group in 1992.",
       },
       {
         "question": "1.You can notice an evident problem without reading it.What is this problem?",
@@ -996,7 +996,7 @@ const examDataMap: Record<string, ExamData> = {
  
       
       {
-        "question": "Read the following paragraphs and type the appropriate words and phrases above in the gap. There are extra words. \n \n \n \n Words : \n \n Decrease slightly, however, in contrast, the smallest, likewise, a half, slipped to, the most popular type, the second most popular, compared to, the second most common, most significant change, while, by comparison \n \n \n Of the six movie genres, thriller was ..... in both years, accounting for 28% in 1973, although its proportion ….. five years later. The …..  occurred in 1978, when action films surged to 24%, becoming ….. genre. Another genre, adventure, stood at 18%, …..  20% five years earlier. \n  …..  the other genres decreased in popularity. At the start of the period, western films were …..  type, attracting 22% of viewers; ….. , this figure slipped to 8% five years later, representing …..  share of the chart. ….. , crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— …..  than that of animation (12%), which emerged as a new genre in 1978.",
+        "question": "Read the following paragraphs and type the appropriate words and phrases below in the gap. There are extra words. \n \n \n \n Words : \n \n Decrease slightly, however, in contrast, the smallest, likewise, a half, slipped to, the most popular type, the second most popular, compared to, the second most common, most significant change, while, by comparison \n \n \n Of the six movie genres, thriller was ..... in both years, accounting for 28% in 1973, although its proportion ….. five years later. The …..  occurred in 1978, when action films surged to 24%, becoming ….. genre. Another genre, adventure, stood at 18%, …..  20% five years earlier. \n  …..  the other genres decreased in popularity. At the start of the period, western films were …..  type, attracting 22% of viewers; ….. , this figure slipped to 8% five years later, representing …..  share of the chart. ….. , crime films experienced a significant drop in ratings, with their audience shrinking to a negligible proportion— …..  than that of animation (12%), which emerged as a new genre in 1978.",
         "answer": ["the most popular type", "decreased slightly", "most significant change", "the second most popular", "compared to", "In contrast", "the second most common", "however", "the smallest", "Likewise", "slightly lower"],
         "placeholder": "Enter the word...",
         multipleInputs: true,
@@ -1170,61 +1170,7 @@ const examDataMap: Record<string, ExamData> = {
         answer:"The table reveals two clear groups of countries based on tourist numbers. France, Spain, and Italy consistently attracted the highest number of tourists, with figures close to or above 80,000 in 2018 and 2019, though these numbers dropped sharply in 2020. Conversely, the USA, Canada, and Australia saw lower but more stable tourist visits over the same period, with a smaller decline in 2020."
 
       },
-      {
-        isExplanation: true,
-        explanationTitle:"Listen to an assessor giving a student feedback on a practice IELTS Task 1 piece of writing.Identify and select the range (High Range,Mid-Range,Low Range) the feedback is related to for each criterion.",
-
-      },
-  
-      {
-        isExplanation: true,
-        explanationTitle: "Audio",
-        audio: 'audio/55.mp3',
-      },
-      {
-        image: 'images/55.png',
-        isChoice: true,
-        choices: [
-          "High Range",
-          "Mid-Range",
-          "Low Range"
-        ],
-        answer: "High Range",
-        
-      },
-      {
-        image: 'images/54.png',
-        isChoice: true,
-        choices: [
-          "High Range",
-          "Mid-Range",
-          "Low Range"
-        ],
-        answer: "High Range",
-        
-      },
-      {
-        image: 'images/56.png',
-        isChoice: true,
-        choices: [
-          "High Range",
-          "Mid-Range",
-          "Low Range"
-        ],
-        answer: "High Range",
-        
-      },
-      {
-        image: 'images/57.png',
-        isChoice: true,
-        choices: [
-          "High Range",
-          "Mid-Range",
-          "Low Range"
-        ],
-        answer: "High Range",
-        
-      },
+     
       
 
       

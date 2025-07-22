@@ -224,7 +224,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
         {showAnswer && (
           <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
             <p className="text-blue-800 font-medium">
-              Correct answer{Array.isArray(answer) ? 's' : ''}:
+              Answer{Array.isArray(answer) ? 's' : ''}:
             </p>
             {Array.isArray(answer) ? (
               <ul className="list-disc list-inside ml-2 text-blue-800">
